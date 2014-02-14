@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Motos" syncable="YES">
+        <attribute name="ano" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fabricante" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha_registro" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id_en_servidor" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="modelo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="registros" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Motos_registro" inverseName="id_moto" inverseEntity="Motos_registro" syncable="YES"/>
+    </entity>
+    <entity name="Motos_registro" syncable="YES">
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id_en_servidor" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="id_moto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Motos" inverseName="registros" inverseEntity="Motos" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Motos" positionX="160" positionY="192" width="128" height="163"/>
+        <element name="Motos_registro" positionX="-270" positionY="200" width="117" height="133"/>
+    </elements>
 </model>

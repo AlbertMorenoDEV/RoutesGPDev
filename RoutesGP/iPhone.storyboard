@@ -1,9 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4443" systemVersion="13A451" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kL5-p9-YnE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3666"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Motos View Controller - Motos-->
+        <scene sceneID="7DW-Ex-UN8">
+            <objects>
+                <viewController id="PQZ-T7-Hz3" customClass="MotosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N2h-RH-Fpu"/>
+                        <viewControllerLayoutGuide type="bottom" id="70z-FA-mMY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DUm-5a-3NW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9dm-mF-CMO">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9dm-mF-CMO" firstAttribute="leading" secondItem="DUm-5a-3NW" secondAttribute="leading" id="5On-31-DkM"/>
+                            <constraint firstItem="70z-FA-mMY" firstAttribute="top" secondItem="9dm-mF-CMO" secondAttribute="bottom" id="Rci-VB-oiw"/>
+                            <constraint firstItem="9dm-mF-CMO" firstAttribute="top" secondItem="N2h-RH-Fpu" secondAttribute="bottom" constant="2" id="Yeh-Y6-tWR"/>
+                            <constraint firstAttribute="trailing" secondItem="9dm-mF-CMO" secondAttribute="trailing" id="aqu-o3-gg9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Motos" id="yFK-KS-MC6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nQc-L8-iJN">
+                            <connections>
+                                <segue destination="Yo4-qt-mZj" kind="modal" id="4O1-0X-uKo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLQ-Dt-YNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="190"/>
+        </scene>
+        <!--Nueva Moto View Controller-->
+        <scene sceneID="gDu-Ce-kXY">
+            <objects>
+                <viewController id="Yo4-qt-mZj" customClass="NuevaMotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TVl-la-aYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="QyZ-Qi-nXo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWU-lM-ulQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-yL-sbH">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Nueva Moto" id="BUL-Sq-foV">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rTj-5J-hxT"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="IkZ-UZ-gN1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fabricante..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zhm-8l-bM9">
+                                <rect key="frame" x="20" y="80" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Modelo..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-MP-F8d">
+                                <rect key="frame" x="20" y="118" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Año..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-cL-kkV">
+                                <rect key="frame" x="20" y="156" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVR-9F-Irp">
+                                <rect key="frame" x="0.0" y="223" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mF-sQ-uZ3">
+                                <rect key="frame" x="20" y="194" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Af-DL-4ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640" y="184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ibO-Y2-4dW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kL5-p9-YnE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E27-CJ-Vg4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PQZ-T7-Hz3" kind="relationship" relationship="rootViewController" id="KWS-o3-5hf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNb-b5-SCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="190"/>
+        </scene>
+    </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
