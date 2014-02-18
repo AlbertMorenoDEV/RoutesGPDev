@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListadoRutasViewController : UIViewController
+@interface ListadoRutasViewController : UITableViewController
 
 @end

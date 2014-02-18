@@ -42,28 +42,38 @@
             </objects>
             <point key="canvasLocation" x="1185" y="190"/>
         </scene>
-        <!--Listado Rutas View Controller - Lista Rutas-->
-        <scene sceneID="mbx-la-4Hy">
+        <!--Listado Rutas View Controller-->
+        <scene sceneID="w2J-Z2-Llt">
             <objects>
-                <viewController id="luz-z0-lre" customClass="ListadoRutasViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="28q-GB-yt0"/>
-                        <viewControllerLayoutGuide type="bottom" id="9T6-x4-45c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uKO-td-mMe">
+                <tableViewController id="16b-yC-8eu" customClass="ListadoRutasViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XqP-MD-dm6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Lista Rutas" id="DSV-9G-J0F"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QGE-28-of2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="GqZ-Wo-rmv">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GqZ-Wo-rmv" id="TG9-RI-gku">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="16b-yC-8eu" id="9GZ-el-Oy3"/>
+                            <outlet property="delegate" destination="16b-yC-8eu" id="rey-70-5nF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDd-t0-vIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="856"/>
         </scene>
         <!--Detalle Ruta View Controller-->
         <scene sceneID="cjH-nM-7eq">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qs-MV-VJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="P0d-dE-8Tq" customClass="DetalleRutaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JDB-LX-jjG"/>
@@ -84,7 +94,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qs-MV-VJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1640" y="856"/>
         </scene>
@@ -164,24 +173,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNb-b5-SCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="497" y="190"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ZfC-Jb-CXI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Nt-CV-ntb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RNo-nL-yoh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="luz-z0-lre" kind="relationship" relationship="rootViewController" id="iGS-id-ByV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BuY-df-wkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="497" y="856"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB1D8A5C18B2CF5400D85266 /* ListadoRutasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D8A5B18B2CF5400D85266 /* ListadoRutasViewController.m */; };
 		BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */; };
+		BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */; };
 		BB1DEAC81884A2400092BE06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEAC71884A2400092BE06 /* Foundation.framework */; };
 		BB1DEACA1884A2410092BE06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEAC91884A2410092BE06 /* CoreGraphics.framework */; };
 		BB1DEACC1884A2410092BE06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEACB1884A2410092BE06 /* UIKit.framework */; };
@@ -30,6 +30,11 @@
 		BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */; };
 		BB7CFA34188F2D83004AE006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA33188F2D83004AE006 /* CoreLocation.framework */; };
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
+		BBF5E87F18B412AB001ECAB5 /* RutaAlerta.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E87E18B412AB001ECAB5 /* RutaAlerta.m */; };
+		BBF5E88218B412AB001ECAB5 /* RutaImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E88118B412AB001ECAB5 /* RutaImagen.m */; };
+		BBF5E88518B412AB001ECAB5 /* RutaComentario.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E88418B412AB001ECAB5 /* RutaComentario.m */; };
+		BBF5E88818B412AB001ECAB5 /* RutaPunto.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E88718B412AB001ECAB5 /* RutaPunto.m */; };
+		BBF5E88B18B412AC001ECAB5 /* Ruta.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF5E88A18B412AC001ECAB5 /* Ruta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB1D8A5A18B2CF5400D85266 /* ListadoRutasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoRutasViewController.h; sourceTree = "<group>"; };
-		BB1D8A5B18B2CF5400D85266 /* ListadoRutasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoRutasViewController.m; sourceTree = "<group>"; };
 		BB1D8A5E18B2CF7100D85266 /* DetalleRutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleRutaViewController.h; sourceTree = "<group>"; };
 		BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleRutaViewController.m; sourceTree = "<group>"; };
+		BB1D8A6218B4078D00D85266 /* ListadoRutasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoRutasViewController.h; sourceTree = "<group>"; };
+		BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoRutasViewController.m; sourceTree = "<group>"; };
 		BB1DEAC41884A2400092BE06 /* RoutesGP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutesGP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1DEAC71884A2400092BE06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB1DEAC91884A2410092BE06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +79,16 @@
 		BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjemploGpsViewController.m; sourceTree = "<group>"; };
 		BB7CFA33188F2D83004AE006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BB7CFA35188F2D8B004AE006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BBF5E87D18B412AB001ECAB5 /* RutaAlerta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaAlerta.h; sourceTree = "<group>"; };
+		BBF5E87E18B412AB001ECAB5 /* RutaAlerta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaAlerta.m; sourceTree = "<group>"; };
+		BBF5E88018B412AB001ECAB5 /* RutaImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaImagen.h; sourceTree = "<group>"; };
+		BBF5E88118B412AB001ECAB5 /* RutaImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaImagen.m; sourceTree = "<group>"; };
+		BBF5E88318B412AB001ECAB5 /* RutaComentario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaComentario.h; sourceTree = "<group>"; };
+		BBF5E88418B412AB001ECAB5 /* RutaComentario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaComentario.m; sourceTree = "<group>"; };
+		BBF5E88618B412AB001ECAB5 /* RutaPunto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaPunto.h; sourceTree = "<group>"; };
+		BBF5E88718B412AB001ECAB5 /* RutaPunto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaPunto.m; sourceTree = "<group>"; };
+		BBF5E88918B412AC001ECAB5 /* Ruta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruta.h; sourceTree = "<group>"; };
+		BBF5E88A18B412AC001ECAB5 /* Ruta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +119,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB1D8A5D18B2CF5800D85266 /* ListadoRutasViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB1D8A5A18B2CF5400D85266 /* ListadoRutasViewController.h */,
-				BB1D8A5B18B2CF5400D85266 /* ListadoRutasViewController.m */,
-			);
-			name = ListadoRutasViewController;
-			sourceTree = "<group>";
-		};
 		BB1D8A6118B2CF7500D85266 /* DetalleRutaViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +126,15 @@
 				BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */,
 			);
 			name = DetalleRutaViewController;
+			sourceTree = "<group>";
+		};
+		BB1D8A6518B4079200D85266 /* ListadoRutasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D8A6218B4078D00D85266 /* ListadoRutasViewController.h */,
+				BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */,
+			);
+			name = ListadoRutasViewController;
 			sourceTree = "<group>";
 		};
 		BB1DEABB1884A2400092BE06 = {
@@ -167,8 +182,9 @@
 				BB7CFA32188F2D41004AE006 /* EjemploGpsViewController */,
 				BB71F57818AD95F8009DB642 /* MotosViewController */,
 				BB71F57C18AD9616009DB642 /* NuevaMotoViewController */,
-				BB1D8A5D18B2CF5800D85266 /* ListadoRutasViewController */,
 				BB1D8A6118B2CF7500D85266 /* DetalleRutaViewController */,
+				BB1D8A6518B4079200D85266 /* ListadoRutasViewController */,
+				BBF5E88C18B412B1001ECAB5 /* Modelos */,
 			);
 			path = RoutesGP;
 			sourceTree = "<group>";
@@ -227,6 +243,24 @@
 				BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */,
 			);
 			name = EjemploGpsViewController;
+			sourceTree = "<group>";
+		};
+		BBF5E88C18B412B1001ECAB5 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				BBF5E88918B412AC001ECAB5 /* Ruta.h */,
+				BBF5E88A18B412AC001ECAB5 /* Ruta.m */,
+				BBF5E88618B412AB001ECAB5 /* RutaPunto.h */,
+				BBF5E88718B412AB001ECAB5 /* RutaPunto.m */,
+				BBF5E88318B412AB001ECAB5 /* RutaComentario.h */,
+				BBF5E88418B412AB001ECAB5 /* RutaComentario.m */,
+				BBF5E88018B412AB001ECAB5 /* RutaImagen.h */,
+				BBF5E88118B412AB001ECAB5 /* RutaImagen.m */,
+				BBF5E87D18B412AB001ECAB5 /* RutaAlerta.h */,
+				BBF5E87E18B412AB001ECAB5 /* RutaAlerta.m */,
+			);
+			name = Modelos;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1D8A5C18B2CF5400D85266 /* ListadoRutasViewController.m in Sources */,
+				BBF5E88B18B412AC001ECAB5 /* Ruta.m in Sources */,
+				BBF5E88818B412AB001ECAB5 /* RutaPunto.m in Sources */,
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
 				BB71F57718AD95F4009DB642 /* MotosViewController.m in Sources */,
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
+				BBF5E88518B412AB001ECAB5 /* RutaComentario.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
+				BBF5E87F18B412AB001ECAB5 /* RutaAlerta.m in Sources */,
+				BBF5E88218B412AB001ECAB5 /* RutaImagen.m in Sources */,
+				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
 				BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */,
 				BB1DEAD61884A2410092BE06 /* main.m in Sources */,
 			);
