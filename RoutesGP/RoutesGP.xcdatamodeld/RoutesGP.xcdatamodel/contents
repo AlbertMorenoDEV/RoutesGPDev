@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Grupo" syncable="YES">
+    <entity name="Grupo" representedClassName="Grupo" syncable="YES">
         <attribute name="fecha_creacion" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,14 +8,14 @@
         <relationship name="rutas" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ruta" inverseName="grupo" inverseEntity="Ruta" syncable="YES"/>
         <relationship name="usuarios" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GrupoUsuarios" inverseName="grupo" inverseEntity="GrupoUsuarios" syncable="YES"/>
     </entity>
-    <entity name="GrupoUsuarios" syncable="YES">
+    <entity name="GrupoUsuarios" representedClassName="GrupoUsuarios" syncable="YES">
         <attribute name="fecha_creacion" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="rol" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="grupo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Grupo" inverseName="usuarios" inverseEntity="Grupo" syncable="YES"/>
     </entity>
-    <entity name="Moto" syncable="YES">
+    <entity name="Moto" representedClassName="Moto" syncable="YES">
         <attribute name="ano" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fabricante" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fecha_registro" optional="YES" attributeType="Date" syncable="YES"/>
@@ -24,7 +24,7 @@
         <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="registros" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MotoRegistro" inverseName="id_moto" inverseEntity="MotoRegistro" syncable="YES"/>
     </entity>
-    <entity name="MotoRegistro" syncable="YES">
+    <entity name="MotoRegistro" representedClassName="MotoRegistro" syncable="YES">
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
@@ -32,7 +32,9 @@
         <relationship name="id_moto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Moto" inverseName="registros" inverseEntity="Moto" syncable="YES"/>
     </entity>
     <entity name="Ruta" representedClassName="Ruta" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dificultad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distancia" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -86,14 +88,14 @@
         <relationship name="ruta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ruta" inverseName="puntos" inverseEntity="Ruta" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Grupo" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="GrupoUsuarios" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Moto" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MotoRegistro" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Ruta" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="RutaAlerta" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="RutaComentario" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="RutaImagen" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="RutaPunto" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Grupo" positionX="-180" positionY="-243" width="128" height="133"/>
+        <element name="GrupoUsuarios" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="Moto" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="MotoRegistro" positionX="385" positionY="-54" width="128" height="120"/>
+        <element name="Ruta" positionX="162" positionY="117" width="128" height="253"/>
+        <element name="RutaAlerta" positionX="-9" positionY="357" width="128" height="165"/>
+        <element name="RutaComentario" positionX="-261" positionY="297" width="128" height="150"/>
+        <element name="RutaImagen" positionX="-351" positionY="48" width="128" height="150"/>
+        <element name="RutaPunto" positionX="216" positionY="-213" width="128" height="195"/>
     </elements>
 </model>

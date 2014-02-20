@@ -35,4 +35,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.fechaLabel.text = self.ruta.fecha.accessibilityValue;
+    self.nombreLabel.text = self.ruta.nombre;
+    self.descripcionTextView.text = self.ruta.description;
+}
+
+- (IBAction)imagenesPulsarBoton:(id)sender
+{
+    
+}
+
+- (IBAction)comentariosPulsarBoton:(id)sender
+{
+    
+}
+
+- (IBAction)trackPulsarBoton:(id)sender
+{
+    
+}
+
+- (IBAction)inclinometroPulsarBoton:(id)sender
+{
+    
+}
 @end

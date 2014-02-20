@@ -2,7 +2,7 @@
 //  Ruta.m
 //  RoutesGP
 //
-//  Created by albert moreno vendrell on 18/02/14.
+//  Created by albert moreno vendrell on 20/02/14.
 //  Copyright (c) 2014 RoutesGP. All rights reserved.
 //
 
@@ -15,13 +15,13 @@
 
 @implementation Ruta
 
+@dynamic dificultad;
 @dynamic fecha;
 @dynamic id;
 @dynamic id_usuario;
+@dynamic nivel;
 @dynamic nombre;
 @dynamic tipo;
-@dynamic nivel;
-@dynamic dificultad;
 @dynamic alertas;
 @dynamic comentarios;
 @dynamic grupo;

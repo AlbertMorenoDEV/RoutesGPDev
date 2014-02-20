@@ -2,7 +2,7 @@
 //  RutaImagen.m
 //  RoutesGP
 //
-//  Created by albert moreno vendrell on 18/02/14.
+//  Created by albert moreno vendrell on 20/02/14.
 //  Copyright (c) 2014 RoutesGP. All rights reserved.
 //
 
@@ -12,12 +12,12 @@
 
 @implementation RutaImagen
 
+@dynamic fecha;
 @dynamic id;
 @dynamic id_usuario;
 @dynamic imagen;
-@dynamic longitud;
 @dynamic latitud;
-@dynamic fecha;
+@dynamic longitud;
 @dynamic ruta;
 
 @end
