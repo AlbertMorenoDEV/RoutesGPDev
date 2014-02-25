@@ -35,4 +35,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)guardarPulsarBoton:(id)sender
+{
+    
+}
+
+- (IBAction)cancelarPulsarBoton:(id)sender
+{
+    
+}
 @end

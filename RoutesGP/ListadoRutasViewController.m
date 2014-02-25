@@ -33,7 +33,7 @@
 
     rgpRutasArray = [[NSMutableArray alloc] init];
     
-    // cargamos las rutas
+    // cargamos las rutas de la base de datos
 }
 
 - (void)didReceiveMemoryWarning
