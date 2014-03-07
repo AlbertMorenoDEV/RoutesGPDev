@@ -41,11 +41,10 @@
 		BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */; };
 		BB7CFA34188F2D83004AE006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA33188F2D83004AE006 /* CoreLocation.framework */; };
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
-		CAA96FAD18CA6D560001E970 /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA96FAC18CA6D560001E970 /* moto.png */; };
-		CAA96FB118CA6D5C0001E970 /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAA96FAE18CA6D5C0001E970 /* FondoMenu.jpg */; };
-		CAA96FB218CA6D5C0001E970 /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA96FAF18CA6D5C0001E970 /* start-button.png */; };
-		CAA96FB318CA6D5C0001E970 /* fondo_sin_moto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAA96FB018CA6D5C0001E970 /* fondo_sin_moto.jpg */; };
-		CAA96FB718CA6D760001E970 /* motoCorreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA96FB618CA6D760001E970 /* motoCorreViewController.m */; };
+		CA2B600718CA736800FF4C0D /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA2B600618CA736800FF4C0D /* FondoMenu.jpg */; };
+		CA2B600918CA776200FF4C0D /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2B600818CA776200FF4C0D /* moto.png */; };
+		CA2B600B18CA777100FF4C0D /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2B600A18CA777100FF4C0D /* start-button.png */; };
+		CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,12 +111,11 @@
 		BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjemploGpsViewController.m; sourceTree = "<group>"; };
 		BB7CFA33188F2D83004AE006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BB7CFA35188F2D8B004AE006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CAA96FAC18CA6D560001E970 /* moto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moto.png; path = ../../../RoutesGPDev/RoutesGP/moto.png; sourceTree = "<group>"; };
-		CAA96FAE18CA6D5C0001E970 /* FondoMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FondoMenu.jpg; path = ../../../RoutesGPDev/RoutesGP/FondoMenu.jpg; sourceTree = "<group>"; };
-		CAA96FAF18CA6D5C0001E970 /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "start-button.png"; path = "../../../RoutesGPDev/RoutesGP/start-button.png"; sourceTree = "<group>"; };
-		CAA96FB018CA6D5C0001E970 /* fondo_sin_moto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fondo_sin_moto.jpg; path = ../../../RoutesGPDev/RoutesGP/fondo_sin_moto.jpg; sourceTree = "<group>"; };
-		CAA96FB518CA6D760001E970 /* motoCorreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = motoCorreViewController.h; path = ../../../RoutesGPDev/RoutesGP/motoCorreViewController.h; sourceTree = "<group>"; };
-		CAA96FB618CA6D760001E970 /* motoCorreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = motoCorreViewController.m; path = ../../../RoutesGPDev/RoutesGP/motoCorreViewController.m; sourceTree = "<group>"; };
+		CA2B600618CA736800FF4C0D /* FondoMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FondoMenu.jpg; path = ../../../../../Downloads/FondoMenu.jpg; sourceTree = "<group>"; };
+		CA2B600818CA776200FF4C0D /* moto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moto.png; path = ../../../../moto.png; sourceTree = "<group>"; };
+		CA2B600A18CA777100FF4C0D /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "start-button.png"; path = "../../../../../Downloads/start-button.png"; sourceTree = "<group>"; };
+		CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotoCorreViewController.h; sourceTree = "<group>"; };
+		CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoCorreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,10 +394,9 @@
 		CAA96FB418CA6D680001E970 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
-				CAA96FAE18CA6D5C0001E970 /* FondoMenu.jpg */,
-				CAA96FAF18CA6D5C0001E970 /* start-button.png */,
-				CAA96FB018CA6D5C0001E970 /* fondo_sin_moto.jpg */,
-				CAA96FAC18CA6D560001E970 /* moto.png */,
+				CA2B600618CA736800FF4C0D /* FondoMenu.jpg */,
+				CA2B600A18CA777100FF4C0D /* start-button.png */,
+				CA2B600818CA776200FF4C0D /* moto.png */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -407,8 +404,8 @@
 		CAA96FB818CA6D820001E970 /* InicioMotoCorre */ = {
 			isa = PBXGroup;
 			children = (
-				CAA96FB518CA6D760001E970 /* motoCorreViewController.h */,
-				CAA96FB618CA6D760001E970 /* motoCorreViewController.m */,
+				CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */,
+				CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */,
 			);
 			name = InicioMotoCorre;
 			sourceTree = "<group>";
@@ -488,13 +485,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA96FB218CA6D5C0001E970 /* start-button.png in Resources */,
-				CAA96FB318CA6D5C0001E970 /* fondo_sin_moto.jpg in Resources */,
-				CAA96FB118CA6D5C0001E970 /* FondoMenu.jpg in Resources */,
+				CA2B600918CA776200FF4C0D /* moto.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
+				CA2B600B18CA777100FF4C0D /* start-button.png in Resources */,
 				BB1DEAD41884A2410092BE06 /* InfoPlist.strings in Resources */,
-				CAA96FAD18CA6D560001E970 /* moto.png in Resources */,
 				BB1DEADF1884A2410092BE06 /* Images.xcassets in Resources */,
+				CA2B600718CA736800FF4C0D /* FondoMenu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,11 +514,11 @@
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
 				BB71F57718AD95F4009DB642 /* MotosViewController.m in Sources */,
-				CAA96FB718CA6D760001E970 /* motoCorreViewController.m in Sources */,
 				BB17784918B6A481006A2CF1 /* Ruta.m in Sources */,
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
 				BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */,
+				CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */,
 				BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */,
 				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
 				BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */,

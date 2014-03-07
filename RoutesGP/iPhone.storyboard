@@ -445,7 +445,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--Moto Corre View Controller-->
         <scene sceneID="mOY-Sc-x5X">
             <objects>
-                <viewController id="z5s-lw-mRw" customClass="motoCorreViewController" sceneMemberID="viewController">
+                <viewController id="z5s-lw-mRw" customClass="MotoCorreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tIr-ck-4ND"/>
                         <viewControllerLayoutGuide type="bottom" id="095-mX-63c"/>
