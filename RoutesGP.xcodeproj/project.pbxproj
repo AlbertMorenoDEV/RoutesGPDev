@@ -289,10 +289,12 @@
 		BB1DEACF1884A2410092BE06 /* RoutesGP */ = {
 			isa = PBXGroup;
 			children = (
+				CAA96FB418CA6D680001E970 /* Imagenes */,
 				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
 				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
 				BB1DEADB1884A2410092BE06 /* RoutesGP.xcdatamodeld */,
+				CAA96FB818CA6D820001E970 /* InicioMotoCorre */,
 				BB1DEAFC1884A61F0092BE06 /* iPhone.storyboard */,
 				BB1DEAD01884A2410092BE06 /* Supporting Files */,
 				BB74BE4E18C7DCD200CBF7FB /* ManagedObjects */,
@@ -463,9 +465,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2B600918CA776200FF4C0D /* moto.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
+				CA2B600B18CA777100FF4C0D /* start-button.png in Resources */,
 				BB1DEAD41884A2410092BE06 /* InfoPlist.strings in Resources */,
 				BB1DEADF1884A2410092BE06 /* Images.xcassets in Resources */,
+				CA2B600718CA736800FF4C0D /* FondoMenu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +498,7 @@
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
 				BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */,
+				CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */,
 				BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */,
 				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
 				BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */,
