@@ -9,6 +9,7 @@
 #import "ListadoRutasViewController.h"
 #import "DetalleRutaViewController.h"
 #import "Ruta.h"
+#import "AppDelegate.h"
 
 @interface ListadoRutasViewController () {
     NSMutableArray *rgpRutasArray;
@@ -34,6 +35,47 @@
     rgpRutasArray = [[NSMutableArray alloc] init];
     
     // cargamos las rutas de la base de datos
+    
+    // Recuperamos el delegado
+    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    
+    // Creamos el Managed Object Context
+    NSManagedObjectContext *contexto = [appDelegate managedObjectContext];
+    
+    // Creamos el entity description
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:contexto];
+    
+    // Creamos el fecth request
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    // Creamos la consulta
+//    NSPredicate *consulta = [NSPredicate predicateWithFormat:@" nombre = %@ ",self.nombreTextField.text];
+//    [request setPredicate:consulta];
+    
+    // Realizamos la consulta
+    NSError *error;
+    NSArray *objetosDevueltos = [contexto executeFetchRequest:request error:&error];
+    
+    // Mostramos las coincidencias si ha habido
+    if (objetosDevueltos.count==0) {
+        NSLog(@"Sin resultados");
+    } else {
+        NSLog(@"%lu resultados", (unsigned long)[objetosDevueltos count]);
+        
+        Ruta *ruta = [[Ruta alloc] init];
+        for (id objetoDevuelto in objetosDevueltos) {
+
+            ruta.nombre = [objetoDevuelto valueForKey:@"nombre"];
+            ruta.descripcion = [objetoDevuelto valueForKey:@"descripcion"];
+            ruta.fecha = [objetoDevuelto valueForKey:@"fecha"];
+            
+            [rgpRutasArray addObject:ruta];
+            
+//            ruta = [[Ruta alloc] init];
+        }
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +119,21 @@
         UITableViewCell *cell = (UITableViewCell *)sender;
         detalleRutaViewController.ruta = [rgpRutasArray objectAtIndex:cell.tag];
     }
+    else if ([segue.identifier isEqualToString:@"irNuevaRuta"])
+    {
+        NuevaRutaViewController *nuevaRutaViewController = (NuevaRutaViewController *)segue.destinationViewController;
+        nuevaRutaViewController.delegate = self;
+    }
+}
+
+#pragma mark - NuevoContactoDelegate
+
+//- (void)nuevaRuta:(Ruta *)ruta
+- (void)nuevaRuta
+{
+    // [rgpRutasArray addObject:ruta];
+    
+    [self.tableView reloadData];
 }
 
 @end

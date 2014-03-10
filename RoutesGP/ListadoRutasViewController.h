@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NuevaRutaViewController.h"
 
-@interface ListadoRutasViewController : UITableViewController
+@interface ListadoRutasViewController : UITableViewController <NuevaRutaDelegate>
 
 @end

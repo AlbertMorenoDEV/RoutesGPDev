@@ -7,6 +7,7 @@
 //
 
 #import "NuevaRutaViewController.h"
+#import "AppDelegate.h"
 
 @interface NuevaRutaViewController ()
 
@@ -37,11 +38,45 @@
 
 - (IBAction)guardarPulsarBoton:(id)sender
 {
+    if (self.delegate != nil)
+    {
+//        Ruta *ruta = [[Ruta alloc] init];
+//        
+//        ruta.nombre = self.nombreTextField.text;
+//        ruta.descripcion = self.descripcionTextView.text;
+//        ruta.fecha = self.fechaDatePicker.date;
+//        ruta.nivel = self.nivelSegmentedControl.selectedSegmentIndex;
+        
+//        [self.delegate nuevaRuta:ruta];
+        [self.delegate nuevaRuta];
+    }
     
+    // Recuperamos el delegado
+    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    
+    // Creamos el Managed Object Context
+    NSManagedObjectContext *contexto = [appDelegate managedObjectContext];
+    
+    // Creamos la nueva ruta
+    NSManagedObject *nuevaRuta;
+    nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
+    
+    // Le damos los valores de la vista
+    [nuevaRuta setValue:self.nombreTextField.text forKey:@"nombre"];
+    [nuevaRuta setValue:self.descripcionTextView.text forKey:@"descripcion"];
+    [nuevaRuta setValue:self.fechaDatePicker.date forKey:@"fecha"];
+    
+    // Guardamos
+    NSError *error;
+    [contexto save:&error];
+    
+    NSLog(@"Ruta guardada");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)cancelarPulsarBoton:(id)sender
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
