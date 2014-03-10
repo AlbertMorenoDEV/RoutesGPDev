@@ -9,7 +9,9 @@
 #import "NuevaRutaViewController.h"
 #import "AppDelegate.h"
 
-@interface NuevaRutaViewController ()
+@interface NuevaRutaViewController () {
+    AppDelegate *mAppDelegate;
+}
 
 @end
 
@@ -38,39 +40,26 @@
 
 - (IBAction)guardarPulsarBoton:(id)sender
 {
-    if (self.delegate != nil)
-    {
-//        Ruta *ruta = [[Ruta alloc] init];
-//        
-//        ruta.nombre = self.nombreTextField.text;
-//        ruta.descripcion = self.descripcionTextView.text;
-//        ruta.fecha = self.fechaDatePicker.date;
-//        ruta.nivel = self.nivelSegmentedControl.selectedSegmentIndex;
-        
-//        [self.delegate nuevaRuta:ruta];
-        [self.delegate nuevaRuta];
-    }
+    NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
+    NSManagedObject *nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
     
-    // Recuperamos el delegado
-    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
-    
-    // Creamos el Managed Object Context
-    NSManagedObjectContext *contexto = [appDelegate managedObjectContext];
-    
-    // Creamos la nueva ruta
-    NSManagedObject *nuevaRuta;
-    nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
-    
-    // Le damos los valores de la vista
     [nuevaRuta setValue:self.nombreTextField.text forKey:@"nombre"];
     [nuevaRuta setValue:self.descripcionTextView.text forKey:@"descripcion"];
-    [nuevaRuta setValue:self.fechaDatePicker.date forKey:@"fecha"];
+    //[nuevaRuta setValue:self.self.fechaDatePicker.date forKey:@"fecha"];
+    //[nuevaRuta setValue:self.nivelSegmentedControl.selectedSegmentIndex forKey:@"nivel"];
     
-    // Guardamos
-    NSError *error;
-    [contexto save:&error];
+    self.nombreTextField.text = @"";
+    self.descripcionTextView.text = @"";
+
+//    para forzar el save en el simulador
+//    NSError *error;
+//    [contexto save:&error];
     
-    NSLog(@"Ruta guardada");
+//    if (error == nil)
+//    {
+        NSLog(@"Ruta guardada");
+        [self.nombreTextField becomeFirstResponder];
+//    }
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }

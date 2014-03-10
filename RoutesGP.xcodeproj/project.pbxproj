@@ -390,6 +390,15 @@
 			name = Ruta;
 			sourceTree = "<group>";
 		};
+		CAA96FB818CA6D820001E970 /* InicioMotoCorre */ = {
+			isa = PBXGroup;
+			children = (
+				CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */,
+				CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */,
+			);
+			name = InicioMotoCorre;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
