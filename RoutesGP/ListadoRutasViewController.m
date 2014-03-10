@@ -13,6 +13,7 @@
 
 @interface ListadoRutasViewController () {
     NSMutableArray *rgpRutasArray;
+    AppDelegate *mAppDelegate;
 }
 
 @end
@@ -36,11 +37,8 @@
     
     // cargamos las rutas de la base de datos
     
-    // Recuperamos el delegado
-    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
-    
     // Creamos el Managed Object Context
-    NSManagedObjectContext *contexto = [appDelegate managedObjectContext];
+    NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
     
     // Creamos el entity description
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:contexto];
