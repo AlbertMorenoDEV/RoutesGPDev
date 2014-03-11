@@ -45,6 +45,7 @@
 		CA2B600918CA776200FF4C0D /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2B600818CA776200FF4C0D /* moto.png */; };
 		CA2B600B18CA777100FF4C0D /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CA2B600A18CA777100FF4C0D /* start-button.png */; };
 		CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */; };
+		CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452118CF407A00DB969C /* SOLO_MOTO.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		CA2B600A18CA777100FF4C0D /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "start-button.png"; path = "../../../../../Downloads/start-button.png"; sourceTree = "<group>"; };
 		CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotoCorreViewController.h; sourceTree = "<group>"; };
 		CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoCorreViewController.m; sourceTree = "<group>"; };
+		CAEC452118CF407A00DB969C /* SOLO_MOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SOLO_MOTO.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +396,7 @@
 		CAA96FB418CA6D680001E970 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				CAEC452118CF407A00DB969C /* SOLO_MOTO.png */,
 				CA2B600618CA736800FF4C0D /* FondoMenu.jpg */,
 				CA2B600A18CA777100FF4C0D /* start-button.png */,
 				CA2B600818CA776200FF4C0D /* moto.png */,
@@ -485,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */,
 				CA2B600918CA776200FF4C0D /* moto.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
 				CA2B600B18CA777100FF4C0D /* start-button.png in Resources */,
