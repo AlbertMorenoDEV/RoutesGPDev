@@ -32,6 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    mAppDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
 
     rgpRutasArray = [[NSMutableArray alloc] init];
     

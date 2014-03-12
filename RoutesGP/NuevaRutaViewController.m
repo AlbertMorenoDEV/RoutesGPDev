@@ -40,6 +40,8 @@
 
 - (IBAction)guardarPulsarBoton:(id)sender
 {
+    mAppDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+    
     NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
     //NSManagedObject *nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
     Ruta *nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
