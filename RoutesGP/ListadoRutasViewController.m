@@ -140,6 +140,7 @@
         
         UITableViewCell *cell = (UITableViewCell *)sender;
         detalleRutaViewController.ruta = [rgpRutasArray objectAtIndex:cell.tag];
+        // detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:cell.tag];
     }
     else if ([segue.identifier isEqualToString:@"irNuevaRuta"])
     {
