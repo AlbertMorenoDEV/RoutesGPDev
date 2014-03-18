@@ -482,6 +482,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1DEAF11884A2410092BE06 /* InfoPlist.strings in Resources */,
+				CAEC452518CF470700DB969C /* FondoMenu.jpg in Resources */,
+				CAEC452B18CF7A5F00DB969C /* start-button.png in Resources */,
+				CAEC452818CF7A2000DB969C /* moto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
