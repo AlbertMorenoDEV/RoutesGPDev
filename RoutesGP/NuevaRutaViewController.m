@@ -40,7 +40,7 @@
 
 - (IBAction)guardarPulsarBoton:(id)sender
 {
-    mAppDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+    mAppDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
     NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
     //NSManagedObject *nuevaRuta = [NSEntityDescription insertNewObjectForEntityForName:@"Ruta" inManagedObjectContext:contexto];
@@ -55,14 +55,26 @@
     self.descripcionTextView.text = @"";
 
 //    para forzar el save en el simulador
-//    NSError *error;
-//    [contexto save:&error];
+    NSError *error;
+    [contexto save:&error];
     
-//    if (error == nil)
-//    {
+    if (error == nil)
+    {
         NSLog(@"Ruta guardada");
         [self.nombreTextField becomeFirstResponder];
-//    }
+    }
+    
+    // Creamos el entity description
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:contexto];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSArray *objetosDevueltos = [contexto executeFetchRequest:request error:&error];
+    if (objetosDevueltos.count==0) {
+        NSLog(@"Sin resultados");
+    } else {
+        NSLog(@"%lu resultados", (unsigned long)[objetosDevueltos count]);
+    }
+    
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }

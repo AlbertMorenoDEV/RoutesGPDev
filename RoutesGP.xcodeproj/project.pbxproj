@@ -289,7 +289,6 @@
 		BB1DEACF1884A2410092BE06 /* RoutesGP */ = {
 			isa = PBXGroup;
 			children = (
-				CAA96FB418CA6D680001E970 /* Imagenes */,
 				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
 				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
@@ -393,8 +392,6 @@
 		CAA96FB818CA6D820001E970 /* InicioMotoCorre */ = {
 			isa = PBXGroup;
 			children = (
-				CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */,
-				CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */,
 			);
 			name = InicioMotoCorre;
 			sourceTree = "<group>";
@@ -443,7 +440,7 @@
 		BB1DEABC1884A2400092BE06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = RoutesGP;
 				TargetAttributes = {
 					BB1DEAE31884A2410092BE06 = {
@@ -474,12 +471,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2B600918CA776200FF4C0D /* moto.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
-				CA2B600B18CA777100FF4C0D /* start-button.png in Resources */,
 				BB1DEAD41884A2410092BE06 /* InfoPlist.strings in Resources */,
 				BB1DEADF1884A2410092BE06 /* Images.xcassets in Resources */,
-				CA2B600718CA736800FF4C0D /* FondoMenu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +501,6 @@
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
 				BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */,
-				CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */,
 				BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */,
 				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
 				BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */,
@@ -563,7 +556,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -602,7 +594,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -660,7 +651,6 @@
 		BB1DEAFA1884A2410092BE06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoutesGP.app/RoutesGP";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -683,7 +673,6 @@
 		BB1DEAFB1884A2410092BE06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RoutesGP.app/RoutesGP";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

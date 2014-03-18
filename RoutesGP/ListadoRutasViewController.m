@@ -14,11 +14,15 @@
 @interface ListadoRutasViewController () {
     NSMutableArray *rgpRutasArray;
     AppDelegate *mAppDelegate;
+    
 }
 
 @end
 
 @implementation ListadoRutasViewController
+
+@synthesize fetchedResultsController = _fetchedResultsController;
+@synthesize managedObjectContext;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,54 +37,66 @@
 {
     [super viewDidLoad];
     
-    mAppDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-
-    rgpRutasArray = [[NSMutableArray alloc] init];
+    mAppDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
-    // cargamos las rutas de la base de datos
+    managedObjectContext = [mAppDelegate managedObjectContext];
     
-    // Creamos el Managed Object Context
-    NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
-    
-    // Creamos el entity description
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:contexto];
-    
-    // Creamos el fecth request
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    [request setEntity:entityDescription];
-    
-    // Creamos la consulta
-//    NSPredicate *consulta = [NSPredicate predicateWithFormat:@" nombre = %@ ",self.nombreTextField.text];
-//    [request setPredicate:consulta];
-    
-    // Realizamos la consulta
     NSError *error;
-    NSArray *objetosDevueltos = [contexto executeFetchRequest:request error:&error];
-    
-    // Mostramos las coincidencias si ha habido
-    if (objetosDevueltos.count==0) {
-        NSLog(@"Sin resultados");
-    } else {
-        NSLog(@"%lu resultados", (unsigned long)[objetosDevueltos count]);
-        
-        Ruta *ruta = [[Ruta alloc] init];
-        for (id objetoDevuelto in objetosDevueltos) {
-
-            ruta.nombre = [objetoDevuelto valueForKey:@"nombre"];
-            ruta.descripcion = [objetoDevuelto valueForKey:@"descripcion"];
-            ruta.fecha = [objetoDevuelto valueForKey:@"fecha"];
-            
-            [rgpRutasArray addObject:ruta];
-            
-//            ruta = [[Ruta alloc] init];
-        }
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        exit(-1); // Fail
     }
+    
+    self.title = @"Listado de Rutas";
+
+//    rgpRutasArray = [[NSMutableArray alloc] init];
+//    
+//    // cargamos las rutas de la base de datos
+//    
+//    // Creamos el Managed Object Context
+//    NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
+//    
+//    // Creamos el entity description
+//    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:contexto];
+//    
+//    // Creamos el fecth request
+//    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+//    [request setEntity:entityDescription];
+//    
+//    // Creamos la consulta
+////    NSPredicate *consulta = [NSPredicate predicateWithFormat:@" nombre = %@ ",self.nombreTextField.text];
+////    [request setPredicate:consulta];
+//    
+//    // Realizamos la consulta
+//    NSError *error;
+//    NSArray *objetosDevueltos = [contexto executeFetchRequest:request error:&error];
+//    
+//    // Mostramos las coincidencias si ha habido
+//    if (objetosDevueltos.count==0) {
+//        NSLog(@"Sin resultados");
+//    } else {
+//        NSLog(@"%lu resultados", (unsigned long)[objetosDevueltos count]);
+//        
+//        Ruta *ruta = [[Ruta alloc] init];
+//        for (id objetoDevuelto in objetosDevueltos) {
+//
+//            ruta.nombre = [objetoDevuelto valueForKey:@"nombre"];
+//            ruta.descripcion = [objetoDevuelto valueForKey:@"descripcion"];
+//            ruta.fecha = [objetoDevuelto valueForKey:@"fecha"];
+//            
+//            [rgpRutasArray addObject:ruta];
+//            
+////            ruta = [[Ruta alloc] init];
+//        }
+//    }
     
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
+//    self.fetchedResultsController = nil;
 }
 
 #pragma mark - Table view data source
@@ -92,18 +108,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [rgpRutasArray count];
+    id sectionInfo = [[_fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    Ruta *ruta = [_fetchedResultsController objectAtIndexPath:indexPath];
+    cell.tag = indexPath.row;
+    cell.textLabel.text = ruta.nombre;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CeldaRuta";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    Ruta *ruta = [rgpRutasArray  objectAtIndex:indexPath.row];
-    
-    cell.tag = indexPath.row;
-    cell.textLabel.text = ruta.nombre;
+    [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
 }
@@ -128,12 +150,101 @@
 
 #pragma mark - NuevoContactoDelegate
 
-//- (void)nuevaRuta:(Ruta *)ruta
 - (void)nuevaRuta
 {
-    // [rgpRutasArray addObject:ruta];
-    
     [self.tableView reloadData];
+}
+
+#pragma mark - NSFetchedResultsController
+
+- (NSFetchedResultsController *)fetchedResultsController
+{
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Ruta" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"fecha" ascending:NO];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:sort]];
+    
+    [fetchRequest setFetchBatchSize:20];
+    
+    NSFetchedResultsController *theFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                                                                  managedObjectContext:managedObjectContext
+                                                                                                    sectionNameKeyPath:nil
+                                                                                                             cacheName:@"Root"];
+    self.fetchedResultsController = theFetchedResultsController;
+    _fetchedResultsController.delegate = self;
+    
+    return _fetchedResultsController;
+}
+
+/*
+ Assume self has a property 'tableView' -- as is the case for an instance of a UITableViewController
+ subclass -- and a method configureCell:atIndexPath: which updates the contents of a given cell
+ with information from a managed object at the given index path in the fetched results controller.
+ */
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex]
+                          withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex]
+                          withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath {
+    
+    UITableView *tableView = self.tableView;
+    
+    switch(type) {
+            
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+                             withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                             withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            [self configureCell:[tableView cellForRowAtIndexPath:indexPath]
+                    atIndexPath:indexPath];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                             withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+                             withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView endUpdates];
 }
 
 @end
