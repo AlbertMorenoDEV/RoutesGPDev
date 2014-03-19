@@ -39,7 +39,7 @@
 {
     self.fechaLabel.text = self.ruta.fecha.accessibilityValue;
     self.nombreLabel.text = self.ruta.nombre;
-    self.descripcionTextView.text = self.ruta.description;
+    self.descripcionTextView.text = self.ruta.descripcion;
 }
 
 - (IBAction)imagenesPulsarBoton:(id)sender

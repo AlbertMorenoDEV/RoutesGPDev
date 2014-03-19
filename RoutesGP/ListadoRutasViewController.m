@@ -10,6 +10,7 @@
 #import "DetalleRutaViewController.h"
 #import "Ruta.h"
 #import "AppDelegate.h"
+#import "ListadoRutasCell.h"
 
 @interface ListadoRutasViewController () {
     NSMutableArray *rgpRutasArray;
@@ -112,18 +113,18 @@
     return [sectionInfo numberOfObjects];
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(ListadoRutasCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     Ruta *ruta = [_fetchedResultsController objectAtIndexPath:indexPath];
     cell.tag = indexPath.row;
-    cell.textLabel.text = ruta.nombre;
-    
+    cell.nombreLabel.text = ruta.nombre;
+    cell.descripcionTextView.text = ruta.descripcion;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CeldaRuta";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ListadoRutasCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     [self configureCell:cell atIndexPath:indexPath];
     
@@ -138,9 +139,8 @@
     {
         DetalleRutaViewController *detalleRutaViewController = (DetalleRutaViewController *)segue.destinationViewController;
         
-        UITableViewCell *cell = (UITableViewCell *)sender;
-        detalleRutaViewController.ruta = [rgpRutasArray objectAtIndex:cell.tag];
-        // detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:cell.tag];
+        ListadoRutasCell *cell = (ListadoRutasCell *)sender;
+        detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathWithIndex:cell.tag]];
     }
     else if ([segue.identifier isEqualToString:@"irNuevaRuta"])
     {

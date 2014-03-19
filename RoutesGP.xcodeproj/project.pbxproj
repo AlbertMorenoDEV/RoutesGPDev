@@ -41,14 +41,17 @@
 		BB7CFA34188F2D83004AE006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA33188F2D83004AE006 /* CoreLocation.framework */; };
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
 		BB8EFED118BE8E3F003B8AE5 /* Ruta.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8EFED018BE8E3F003B8AE5 /* Ruta.m */; };
-		CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */; };
-		CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452118CF407A00DB969C /* SOLO_MOTO.png */; };
-		CAEC452418CF470700DB969C /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452318CF470700DB969C /* FondoMenu.jpg */; };
-		CAEC452518CF470700DB969C /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452318CF470700DB969C /* FondoMenu.jpg */; };
-		CAEC452718CF7A2000DB969C /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452618CF7A2000DB969C /* moto.png */; };
-		CAEC452818CF7A2000DB969C /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452618CF7A2000DB969C /* moto.png */; };
-		CAEC452A18CF7A5F00DB969C /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452918CF7A5F00DB969C /* start-button.png */; };
-		CAEC452B18CF7A5F00DB969C /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452918CF7A5F00DB969C /* start-button.png */; };
+		BBEF8B2018D904FF00A73213 /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BBEF8B1C18D904FE00A73213 /* FondoMenu.jpg */; };
+		BBEF8B2118D904FF00A73213 /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = BBEF8B1D18D904FE00A73213 /* moto.png */; };
+		BBEF8B2218D904FF00A73213 /* SOLO_MOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = BBEF8B1E18D904FE00A73213 /* SOLO_MOTO.png */; };
+		BBEF8B2318D904FF00A73213 /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = BBEF8B1F18D904FE00A73213 /* start-button.png */; };
+		CAEC452218CF407A00DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452418CF470700DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452518CF470700DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452718CF7A2000DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452818CF7A2000DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452A18CF7A5F00DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CAEC452B18CF7A5F00DB969C /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,10 @@
 		BB7CFA35188F2D8B004AE006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BB8EFECF18BE8E3F003B8AE5 /* Ruta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruta.h; sourceTree = "<group>"; };
 		BB8EFED018BE8E3F003B8AE5 /* Ruta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruta.m; sourceTree = "<group>"; };
+		BBEF8B1C18D904FE00A73213 /* FondoMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoMenu.jpg; sourceTree = "<group>"; };
+		BBEF8B1D18D904FE00A73213 /* moto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moto.png; sourceTree = "<group>"; };
+		BBEF8B1E18D904FE00A73213 /* SOLO_MOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SOLO_MOTO.png; sourceTree = "<group>"; };
+		BBEF8B1F18D904FE00A73213 /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +304,10 @@
 		BB1DEACF1884A2410092BE06 /* RoutesGP */ = {
 			isa = PBXGroup;
 			children = (
+				BBEF8B1C18D904FE00A73213 /* FondoMenu.jpg */,
+				BBEF8B1D18D904FE00A73213 /* moto.png */,
+				BBEF8B1E18D904FE00A73213 /* SOLO_MOTO.png */,
+				BBEF8B1F18D904FE00A73213 /* start-button.png */,
 				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
 				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
@@ -479,13 +490,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEC452418CF470700DB969C /* FondoMenu.jpg in Resources */,
-				CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */,
-				CAEC452718CF7A2000DB969C /* moto.png in Resources */,
-				CAEC452A18CF7A5F00DB969C /* start-button.png in Resources */,
+				CAEC452418CF470700DB969C /* (null) in Resources */,
+				CAEC452218CF407A00DB969C /* (null) in Resources */,
+				BBEF8B2118D904FF00A73213 /* moto.png in Resources */,
+				CAEC452718CF7A2000DB969C /* (null) in Resources */,
+				CAEC452A18CF7A5F00DB969C /* (null) in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
+				BBEF8B2318D904FF00A73213 /* start-button.png in Resources */,
 				BB1DEAD41884A2410092BE06 /* InfoPlist.strings in Resources */,
 				BB1DEADF1884A2410092BE06 /* Images.xcassets in Resources */,
+				BBEF8B2018D904FF00A73213 /* FondoMenu.jpg in Resources */,
+				BBEF8B2218D904FF00A73213 /* SOLO_MOTO.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,9 +509,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1DEAF11884A2410092BE06 /* InfoPlist.strings in Resources */,
-				CAEC452518CF470700DB969C /* FondoMenu.jpg in Resources */,
-				CAEC452B18CF7A5F00DB969C /* start-button.png in Resources */,
-				CAEC452818CF7A2000DB969C /* moto.png in Resources */,
+				CAEC452518CF470700DB969C /* (null) in Resources */,
+				CAEC452B18CF7A5F00DB969C /* (null) in Resources */,
+				CAEC452818CF7A2000DB969C /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
