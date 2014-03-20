@@ -121,7 +121,7 @@
     cell.descripcionTextView.text = ruta.descripcion;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (ListadoRutasCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CeldaRuta";
     ListadoRutasCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -139,8 +139,9 @@
     {
         DetalleRutaViewController *detalleRutaViewController = (DetalleRutaViewController *)segue.destinationViewController;
         
-        ListadoRutasCell *cell = (ListadoRutasCell *)sender;
-        detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathWithIndex:cell.tag]];
+        //ListadoRutasCell *cell = (ListadoRutasCell *)sender;
+        //detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathWithIndex:cell.tag]];
+        detalleRutaViewController.ruta = [_fetchedResultsController objectAtIndexPath:[self.tableView indexPathForCell:sender]];
     }
     else if ([segue.identifier isEqualToString:@"irNuevaRuta"])
     {
