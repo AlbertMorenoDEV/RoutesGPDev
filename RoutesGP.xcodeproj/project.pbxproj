@@ -42,6 +42,13 @@
 		BB7CFA34188F2D83004AE006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA33188F2D83004AE006 /* CoreLocation.framework */; };
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
 		CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */; };
+		CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA91DB6B18DC73250084A637 /* iCarousel.m */; };
+		CA91DB7218DC73550084A637 /* menuGrupos.png in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB6E18DC73550084A637 /* menuGrupos.png */; };
+		CA91DB7318DC73550084A637 /* menuMotos.png in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB6F18DC73550084A637 /* menuMotos.png */; };
+		CA91DB7418DC73550084A637 /* menuRoutes.png in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB7018DC73550084A637 /* menuRoutes.png */; };
+		CA91DB7518DC73550084A637 /* INICIO_LOGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB7118DC73550084A637 /* INICIO_LOGO.jpg */; };
+		CA91DB7918DC73ED0084A637 /* CarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA91DB7818DC73ED0084A637 /* CarouselViewController.m */; };
+		CA91DB7B18DDA5BF0084A637 /* Fondo_inicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB7A18DDA5BF0084A637 /* Fondo_inicio.jpg */; };
 		CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452118CF407A00DB969C /* SOLO_MOTO.png */; };
 		CAEC452418CF470700DB969C /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452318CF470700DB969C /* FondoMenu.jpg */; };
 		CAEC452518CF470700DB969C /* FondoMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452318CF470700DB969C /* FondoMenu.jpg */; };
@@ -117,6 +124,15 @@
 		BB7CFA35188F2D8B004AE006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CA2B600C18CA779A00FF4C0D /* MotoCorreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotoCorreViewController.h; sourceTree = "<group>"; };
 		CA2B600D18CA779A00FF4C0D /* MotoCorreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoCorreViewController.m; sourceTree = "<group>"; };
+		CA91DB6A18DC73250084A637 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		CA91DB6B18DC73250084A637 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		CA91DB6E18DC73550084A637 /* menuGrupos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuGrupos.png; sourceTree = "<group>"; };
+		CA91DB6F18DC73550084A637 /* menuMotos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuMotos.png; sourceTree = "<group>"; };
+		CA91DB7018DC73550084A637 /* menuRoutes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuRoutes.png; sourceTree = "<group>"; };
+		CA91DB7118DC73550084A637 /* INICIO_LOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = INICIO_LOGO.jpg; sourceTree = "<group>"; };
+		CA91DB7718DC73ED0084A637 /* CarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselViewController.h; sourceTree = "<group>"; };
+		CA91DB7818DC73ED0084A637 /* CarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselViewController.m; sourceTree = "<group>"; };
+		CA91DB7A18DDA5BF0084A637 /* Fondo_inicio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fondo_inicio.jpg; sourceTree = "<group>"; };
 		CAEC452118CF407A00DB969C /* SOLO_MOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SOLO_MOTO.png; sourceTree = "<group>"; };
 		CAEC452318CF470700DB969C /* FondoMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoMenu.jpg; sourceTree = "<group>"; };
 		CAEC452618CF7A2000DB969C /* moto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moto.png; sourceTree = "<group>"; };
@@ -313,11 +329,12 @@
 			isa = PBXGroup;
 			children = (
 				CAA96FB418CA6D680001E970 /* Imagenes */,
+				CAA96FB818CA6D820001E970 /* InicioMotoCorre */,
+				CA91DB6D18DC732A0084A637 /* iCarousel */,
 				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
 				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
 				BB1DEADB1884A2410092BE06 /* RoutesGP.xcdatamodeld */,
-				CAA96FB818CA6D820001E970 /* InicioMotoCorre */,
 				BB1DEAFC1884A61F0092BE06 /* iPhone.storyboard */,
 				BB1DEAD01884A2410092BE06 /* Supporting Files */,
 				BB17786018B6BBCF006A2CF1 /* Componentes */,
@@ -396,9 +413,33 @@
 			name = EjemploGpsViewController;
 			sourceTree = "<group>";
 		};
+		CA91DB6D18DC732A0084A637 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				CA91DB7718DC73ED0084A637 /* CarouselViewController.h */,
+				CA91DB7818DC73ED0084A637 /* CarouselViewController.m */,
+				CA91DB7618DC735C0084A637 /* imagenesCarousel */,
+				CA91DB6A18DC73250084A637 /* iCarousel.h */,
+				CA91DB6B18DC73250084A637 /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		CA91DB7618DC735C0084A637 /* imagenesCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				CA91DB6E18DC73550084A637 /* menuGrupos.png */,
+				CA91DB6F18DC73550084A637 /* menuMotos.png */,
+				CA91DB7018DC73550084A637 /* menuRoutes.png */,
+				CA91DB7118DC73550084A637 /* INICIO_LOGO.jpg */,
+			);
+			name = imagenesCarousel;
+			sourceTree = "<group>";
+		};
 		CAA96FB418CA6D680001E970 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				CA91DB7A18DDA5BF0084A637 /* Fondo_inicio.jpg */,
 				CAEC452918CF7A5F00DB969C /* start-button.png */,
 				CAEC452318CF470700DB969C /* FondoMenu.jpg */,
 				CAEC452618CF7A2000DB969C /* moto.png */,
@@ -491,12 +532,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA91DB7518DC73550084A637 /* INICIO_LOGO.jpg in Resources */,
+				CA91DB7418DC73550084A637 /* menuRoutes.png in Resources */,
 				CAEC452418CF470700DB969C /* FondoMenu.jpg in Resources */,
 				CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */,
 				CAEC452718CF7A2000DB969C /* moto.png in Resources */,
 				CAEC452A18CF7A5F00DB969C /* start-button.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
+				CA91DB7B18DDA5BF0084A637 /* Fondo_inicio.jpg in Resources */,
 				BB1DEAD41884A2410092BE06 /* InfoPlist.strings in Resources */,
+				CA91DB7218DC73550084A637 /* menuGrupos.png in Resources */,
+				CA91DB7318DC73550084A637 /* menuMotos.png in Resources */,
 				BB1DEADF1884A2410092BE06 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,12 +571,14 @@
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
 				BB71F57718AD95F4009DB642 /* MotosViewController.m in Sources */,
 				BB17784918B6A481006A2CF1 /* Ruta.m in Sources */,
+				CA91DB7918DC73ED0084A637 /* CarouselViewController.m in Sources */,
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
 				BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */,
 				CA2B600E18CA779A00FF4C0D /* MotoCorreViewController.m in Sources */,
 				BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */,
 				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
+				CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */,
 				BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */,
 				BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */,
 				BB17785218B6A481006A2CF1 /* RutaComentario.m in Sources */,

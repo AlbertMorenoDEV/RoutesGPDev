@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z5s-lw-mRw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z5s-lw-mRw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -454,7 +454,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FondoMenu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-rd-xpl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo_inicio.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-rd-xpl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -462,18 +462,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="153" y="165" width="87" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="GjB-MN-LVV">
-                                <rect key="frame" x="30" y="386" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7W-oj-KBB">
-                                <rect key="frame" x="40" y="392" width="82" height="86"/>
+                                <rect key="frame" x="47" y="347" width="253" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="start:" destination="z5s-lw-mRw" eventType="touchUpInside" id="NMV-rh-Iz2"/>
+                                    <segue destination="wTb-vL-Da2" kind="modal" modalTransitionStyle="crossDissolve" id="OdW-cY-hVj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -483,12 +480,48 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="fondo" destination="hZm-rd-xpl" id="S3p-mT-o4V"/>
                         <outlet property="moto" destination="3Kf-5u-87G" id="dd8-FB-OAU"/>
                         <outlet property="start" destination="Z7W-oj-KBB" id="das-1v-wPm"/>
-                        <outlet property="startImagen" destination="GjB-MN-LVV" id="onw-E1-iHY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFu-ix-9tJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="490" y="-579"/>
+        </scene>
+        <!--Carousel View Controller-->
+        <scene sceneID="Ozq-4a-FGZ">
+            <objects>
+                <viewController id="wTb-vL-Da2" customClass="CarouselViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c0z-43-twe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kia-Hr-jje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="irS-hp-WYK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FondoMenu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3N5-1Z-zng">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dR9-cH-p5N" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="295" width="320" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wTb-vL-Da2" id="3eP-72-8js"/>
+                                    <outlet property="delegate" destination="wTb-vL-Da2" id="8ae-Yg-tBy"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VO1-68-S5r"/>
+                    <connections>
+                        <outlet property="firstCarousel" destination="dR9-cH-p5N" id="fez-nh-KQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7F-kF-Wd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="-579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ibO-Y2-4dW">
@@ -529,8 +562,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="FondoMenu.jpg" width="640" height="1136"/>
+        <image name="Fondo_inicio.jpg" width="640" height="1136"/>
         <image name="moto.png" width="434" height="389"/>
-        <image name="start-button.png" width="329" height="328"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
