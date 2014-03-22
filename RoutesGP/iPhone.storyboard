@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z5s-lw-mRw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Motos View Controller - Motos-->
@@ -448,10 +448,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1640" y="184"/>
         </scene>
-        <!--Moto Corre View Controller-->
+        <!--Moto Corre2 View Controller-->
         <scene sceneID="mOY-Sc-x5X">
             <objects>
-                <viewController id="z5s-lw-mRw" customClass="MotoCorreViewController" sceneMemberID="viewController">
+                <viewController id="z5s-lw-mRw" customClass="MotoCorre2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tIr-ck-4ND"/>
                         <viewControllerLayoutGuide type="bottom" id="095-mX-63c"/>
