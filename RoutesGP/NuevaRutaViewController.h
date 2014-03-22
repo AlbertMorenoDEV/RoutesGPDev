@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "Ruta.h"
 
+@protocol NuevaRutaDelegate <NSObject>
+
+//- (void)nuevaRuta:(Ruta *)ruta;
+- (void)nuevaRuta;
+
+@end
+
 @interface NuevaRutaViewController : UIViewController
 
-@property (strong, nonatomic) Ruta *ruta;
+@property (strong, nonatomic) id <NuevaRutaDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *nombreTextField;
 @property (weak, nonatomic) IBOutlet UITextView *descripcionTextView;

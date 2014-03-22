@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NuevaRutaViewController.h"
 
-@interface ListadoRutasViewController : UITableViewController
+@interface ListadoRutasViewController : UITableViewController <NuevaRutaDelegate, NSFetchedResultsControllerDelegate>
+
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end
