@@ -217,6 +217,9 @@
       newIndexPath:(NSIndexPath *)newIndexPath {
     
     UITableView *tableView = self.tableView;
+    static NSString *CellIdentifier = @"CeldaRuta";
+    ListadoRutasCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                             forIndexPath:indexPath];
     
     switch(type) {
             
@@ -231,7 +234,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath]
+            [self configureCell:cell
                     atIndexPath:indexPath];
             break;
             

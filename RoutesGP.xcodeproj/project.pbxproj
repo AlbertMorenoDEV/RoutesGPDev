@@ -35,11 +35,12 @@
 		BB1DEAF11884A2410092BE06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1DEAEF1884A2410092BE06 /* InfoPlist.strings */; };
 		BB1DEAF31884A2410092BE06 /* RoutesGPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1DEAF21884A2410092BE06 /* RoutesGPTests.m */; };
 		BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1DEAFC1884A61F0092BE06 /* iPhone.storyboard */; };
-		BB71F57718AD95F4009DB642 /* MotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71F57618AD95F4009DB642 /* MotosViewController.m */; };
 		BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71F57A18AD960F009DB642 /* NuevaMotoViewController.m */; };
 		BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */; };
 		BB7CFA34188F2D83004AE006 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA33188F2D83004AE006 /* CoreLocation.framework */; };
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
+		BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */; };
+		BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6193018E0E89F005B9999 /* DetalleMotoViewController.m */; };
 		CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA91DB6B18DC73250084A637 /* iCarousel.m */; };
 		CA91DB7218DC73550084A637 /* menuGrupos.png in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB6E18DC73550084A637 /* menuGrupos.png */; };
 		CA91DB7318DC73550084A637 /* menuMotos.png in Resources */ = {isa = PBXBuildFile; fileRef = CA91DB6F18DC73550084A637 /* menuMotos.png */; };
@@ -111,14 +112,16 @@
 		BB1DEAF01884A2410092BE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB1DEAF21884A2410092BE06 /* RoutesGPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutesGPTests.m; sourceTree = "<group>"; };
 		BB1DEAFC1884A61F0092BE06 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		BB71F57518AD95F4009DB642 /* MotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotosViewController.h; sourceTree = "<group>"; };
-		BB71F57618AD95F4009DB642 /* MotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotosViewController.m; sourceTree = "<group>"; };
 		BB71F57918AD960F009DB642 /* NuevaMotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevaMotoViewController.h; sourceTree = "<group>"; };
 		BB71F57A18AD960F009DB642 /* NuevaMotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevaMotoViewController.m; sourceTree = "<group>"; };
 		BB7CFA2F188F2D3C004AE006 /* EjemploGpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjemploGpsViewController.h; sourceTree = "<group>"; };
 		BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjemploGpsViewController.m; sourceTree = "<group>"; };
 		BB7CFA33188F2D83004AE006 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BB7CFA35188F2D8B004AE006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BBC6192818E0E831005B9999 /* ListadoMotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoMotosViewController.h; sourceTree = "<group>"; };
+		BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoMotosViewController.m; sourceTree = "<group>"; };
+		BBC6192F18E0E89F005B9999 /* DetalleMotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleMotoViewController.h; sourceTree = "<group>"; };
+		BBC6193018E0E89F005B9999 /* DetalleMotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleMotoViewController.m; sourceTree = "<group>"; };
 		CA91DB6A18DC73250084A637 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		CA91DB6B18DC73250084A637 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		CA91DB6E18DC73550084A637 /* menuGrupos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuGrupos.png; sourceTree = "<group>"; };
@@ -331,7 +334,8 @@
 				BB1D8A6118B2CF7500D85266 /* DetalleRutaViewController */,
 				BB1D8A6518B4079200D85266 /* ListadoRutasViewController */,
 				BB71F57C18AD9616009DB642 /* NuevaMotoViewController */,
-				BB71F57818AD95F8009DB642 /* MotosViewController */,
+				BBC6193218E0E8A3005B9999 /* DetalleMotoViewController */,
+				BBC6192B18E0E836005B9999 /* ListadoMotosViewController */,
 				BB7CFA32188F2D41004AE006 /* EjemploGpsViewController */,
 			);
 			path = RoutesGP;
@@ -366,15 +370,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BB71F57818AD95F8009DB642 /* MotosViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB71F57518AD95F4009DB642 /* MotosViewController.h */,
-				BB71F57618AD95F4009DB642 /* MotosViewController.m */,
-			);
-			name = MotosViewController;
-			sourceTree = "<group>";
-		};
 		BB71F57C18AD9616009DB642 /* NuevaMotoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +401,24 @@
 				BB7CFA30188F2D3C004AE006 /* EjemploGpsViewController.m */,
 			);
 			name = EjemploGpsViewController;
+			sourceTree = "<group>";
+		};
+		BBC6192B18E0E836005B9999 /* ListadoMotosViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6192818E0E831005B9999 /* ListadoMotosViewController.h */,
+				BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */,
+			);
+			name = ListadoMotosViewController;
+			sourceTree = "<group>";
+		};
+		BBC6193218E0E8A3005B9999 /* DetalleMotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6192F18E0E89F005B9999 /* DetalleMotoViewController.h */,
+				BBC6193018E0E89F005B9999 /* DetalleMotoViewController.m */,
+			);
+			name = DetalleMotoViewController;
 			sourceTree = "<group>";
 		};
 		CA91DB6D18DC732A0084A637 /* iCarousel */ = {
@@ -561,10 +574,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB17784318B6A481006A2CF1 /* Moto.m in Sources */,
+				BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */,
 				BB17783618B6A3A7006A2CF1 /* NuevaRutaViewController.m in Sources */,
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
-				BB71F57718AD95F4009DB642 /* MotosViewController.m in Sources */,
 				CA91DB7918DC73ED0084A637 /* CarouselViewController.m in Sources */,
 				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
@@ -580,6 +593,7 @@
 				BB17784618B6A481006A2CF1 /* MotoRegistro.m in Sources */,
 				BB17784018B6A481006A2CF1 /* GrupoUsuarios.m in Sources */,
 				BB1DEAD61884A2410092BE06 /* main.m in Sources */,
+				BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */,
 				BB17784C18B6A481006A2CF1 /* Grupo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
