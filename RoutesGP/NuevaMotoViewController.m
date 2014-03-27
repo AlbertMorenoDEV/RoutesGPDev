@@ -7,8 +7,11 @@
 //
 
 #import "NuevaMotoViewController.h"
+#import "AppDelegate.h"
 
-@interface NuevaMotoViewController ()
+@interface NuevaMotoViewController () {
+    AppDelegate *mAppDelegate;
+}
 
 @end
 
@@ -35,4 +38,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)guardarPulsarBoton:(id)sender
+{
+    mAppDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    NSManagedObjectContext *contexto = [mAppDelegate managedObjectContext];
+    Moto *nuevaMoto = [NSEntityDescription insertNewObjectForEntityForName:@"Moto" inManagedObjectContext:contexto];
+    
+    [nuevaMoto setValue:self.fabricanteTextField.text forKeyPath:@"fabricante"];
+    [nuevaMoto setValue:self.modeloTextField.text forKeyPath:@"modelo"];
+    [nuevaMoto setValue:self.anoTextField.text forKeyPath:@"ano"];
+    //[nuevaMoto setValue:[self.tipoPickerView ] forKeyPath:@"tipo"];
+}
+
+- (IBAction)cancelarPulsarBoton:(id)sender
+{
+    
+}
 @end

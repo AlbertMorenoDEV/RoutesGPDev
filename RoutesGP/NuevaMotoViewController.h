@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Moto.h"
 
 @interface NuevaMotoViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *fabricanteTextField;
+@property (weak, nonatomic) IBOutlet UITextField *modeloTextField;
+@property (weak, nonatomic) IBOutlet UITextField *anoTextField;
+@property (weak, nonatomic) IBOutlet UIPickerView *tipoPickerView;
+
+- (IBAction)guardarPulsarBoton:(id)sender;
+- (IBAction)cancelarPulsarBoton:(id)sender;
 
 @end
