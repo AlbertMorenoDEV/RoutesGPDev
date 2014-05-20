@@ -15,4 +15,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *anoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tipoLabel;
 
+//imagenes
+@property (weak, nonatomic) IBOutlet UIImageView *fotoMotoImg;
+@property (weak, nonatomic) IBOutlet UIImageView *fotoLugarImg;
+
+
+
+
+- (IBAction)desplazarViewMantenimiento:(id)sender;
+
+
 @end

@@ -184,6 +184,11 @@
     return _fetchedResultsController;
 }
 
+- (IBAction)volverMenuPrincipal:(id)sender {
+    [[self presentingViewController]
+     dismissModalViewControllerAnimated:YES];
+}
+
 /*
  Assume self has a property 'tableView' -- as is the case for an instance of a UITableViewController
  subclass -- and a method configureCell:atIndexPath: which updates the contents of a given cell

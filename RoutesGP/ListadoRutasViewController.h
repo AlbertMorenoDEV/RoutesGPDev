@@ -14,4 +14,5 @@
 @property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
+- (IBAction)volverMenuPrincipal:(id)sender;
 @end

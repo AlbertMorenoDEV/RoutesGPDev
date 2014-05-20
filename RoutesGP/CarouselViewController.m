@@ -7,6 +7,8 @@
 //
 
 #import "CarouselViewController.h"
+#import "ListadoMotosViewController.h"
+#import "ListadoRutasViewController.h"
 
 @interface CarouselViewController ()
 
@@ -31,6 +33,7 @@
     //data of some kind - don't store data in your item views
     //or the recycling mechanism will destroy your data once
     //your item views move off-screen
+     wrap = YES;
     self.items = [NSMutableArray array];
     for (int i = 0; i < 3; i++)
     {
@@ -54,7 +57,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     //configure carousel
-    firstCarousel.type = iCarouselTypeLinear;
+    //firstCarousel.type = iCarouselTypeLinear;
+    firstCarousel.type = iCarouselTypeRotary;
     firstCarousel.backgroundColor = [UIColor clearColor];
     //firstCarousel.alpha = 0.5;
     //firstCarousel.bounds =CGRectMake(0, 0, 20, 20);
@@ -205,7 +209,8 @@
         case iCarouselOptionSpacing:
         {
             //add a bit of spacing between the item views
-            return value * 1.05f;
+            //return value * 1.05f;
+            return value * 3.05f;
         }
         case iCarouselOptionFadeMax:
         {
@@ -230,6 +235,61 @@
 {
     NSNumber *item = (self.items)[index];
     NSLog(@"Tapped view number: %@", item);
+    
+    switch (index) {
+        case 0:
+             NSLog(@"Tapped view number: %@", item);
+            break;
+        case 1:{
+             NSLog(@"Tapped view number: %@", item);
+            
+            
+            ListadoRutasViewController *vclistadoRutas =[self.storyboard instantiateViewControllerWithIdentifier:@"ListadoRutasViewController"];
+            
+            UINavigationController * NClistadoRutas = [[UINavigationController alloc]initWithRootViewController:vclistadoRutas];
+            
+            
+            
+            //[[ListadoMotosViewController alloc]initWithNibName:@"ListadoMotosViewController" bundle:nil];
+            
+            //ListadoMotosViewController * vclistadoMotos = [[ListadoMotosViewController alloc]init];
+            //vclistadoMotos.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            [self presentModalViewController:NClistadoRutas animated:YES];
+            
+            break;
+        }
+        case 2:{
+             NSLog(@"Tapped view number: %@", item);
+            
+              ListadoMotosViewController *vclistadoMotos =[self.storyboard instantiateViewControllerWithIdentifier:@"ListadoMotosViewController"];
+        //UINavigationController * NClistadoMotos = [[UINavigationController alloc]initWithRootViewController:vclistadoMotos];
+        UINavigationController *NClistadoMotos = [self.storyboard instantiateViewControllerWithIdentifier:@"ListadoMotosNavigation"];
+        NClistadoMotos.navigationBar.backgroundColor = [UIColor clearColor];
+            
+           // NClistadoMotos.navigationBar.translucent = YES;
+           // NClistadoMotos.navigationBar.opaque = YES;
+           // NClistadoMotos.navigationBar.tintColor = [UIColor clearColor];
+           // NClistadoMotos.navigationBar.backgroundColor = [UIColor clearColor];
+            
+            
+        //[[ListadoMotosViewController alloc]initWithNibName:@"ListadoMotosViewController" bundle:nil];
+            
+            //ListadoMotosViewController * vclistadoMotos = [[ListadoMotosViewController alloc]init];
+            //vclistadoMotos.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+            //[self presentModalViewController:NClistadoMotos animated:YES];
+            
+            [self presentModalViewController:NClistadoMotos animated:YES];
+            break;
+        }
+            
+       
+    }
+    
+    
+    
+    
+    
+    
 }
 
 @end

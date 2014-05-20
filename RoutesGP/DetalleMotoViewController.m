@@ -7,6 +7,7 @@
 //
 
 #import "DetalleMotoViewController.h"
+#import "MantenimientoFichaViewController.h"
 
 @interface DetalleMotoViewController ()
 
@@ -27,6 +28,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    self.fotoMotoImg.image = [UIImage imageNamed:@"start-button.png"];
+    self.fotoMotoImg.contentMode = UIViewContentModeScaleAspectFill;
+    self.fotoMotoImg.clipsToBounds = YES;
+    self.fotoMotoImg.layer.cornerRadius = 48.0f;
+    self.fotoMotoImg.layer.borderWidth = 4.0f;
+    self.fotoMotoImg.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    UIColor* imageBorderColor = [UIColor colorWithRed:222.0/255 green:59.0/255 blue:47.0/255 alpha:0.4f];
+    
+    [self styleFriendProfileImage:self.fotoLugarImg withImageNamed:@"menuGrupos.png" andColor:imageBorderColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +48,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma  Redondeando el UIImageView
+
+-(void)styleFriendProfileImage:(UIImageView*)imageView withImageNamed:(NSString*)imageName andColor:(UIColor*)color{
+    
+    imageView.image = [UIImage imageNamed:imageName];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    imageView.layer.cornerRadius = 30.0f;
+    imageView.layer.borderWidth = 4.0f;
+    imageView.layer.borderColor = color.CGColor;
+}
+
+
 
 /*
 #pragma mark - Navigation
@@ -46,4 +74,8 @@
 }
 */
 
+- (IBAction)desplazarViewMantenimiento:(id)sender {
+    
+   // MantenimientoFichaViewController * mantenimientoFichaVC =[[MantenimientoFichaViewController alloc] ini
+}
 @end

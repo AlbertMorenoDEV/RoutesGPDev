@@ -56,6 +56,9 @@
 		CAEC452818CF7A2000DB969C /* moto.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452618CF7A2000DB969C /* moto.png */; };
 		CAEC452A18CF7A5F00DB969C /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452918CF7A5F00DB969C /* start-button.png */; };
 		CAEC452B18CF7A5F00DB969C /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = CAEC452918CF7A5F00DB969C /* start-button.png */; };
+		EE4880A71914476A002C5777 /* ListadoMotosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4880A61914476A002C5777 /* ListadoMotosCell.m */; };
+		EE4880A919183C05002C5777 /* FondoAppRoutesGp.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4880A819183C05002C5777 /* FondoAppRoutesGp.png */; };
+		EE4880AC1919904F002C5777 /* MantenimientoFichaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4880AB1919904F002C5777 /* MantenimientoFichaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,11 @@
 		CAEC452318CF470700DB969C /* FondoMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoMenu.jpg; sourceTree = "<group>"; };
 		CAEC452618CF7A2000DB969C /* moto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moto.png; sourceTree = "<group>"; };
 		CAEC452918CF7A5F00DB969C /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
+		EE4880A51914476A002C5777 /* ListadoMotosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoMotosCell.h; sourceTree = "<group>"; };
+		EE4880A61914476A002C5777 /* ListadoMotosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoMotosCell.m; sourceTree = "<group>"; };
+		EE4880A819183C05002C5777 /* FondoAppRoutesGp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoAppRoutesGp.png; sourceTree = "<group>"; };
+		EE4880AA1919904F002C5777 /* MantenimientoFichaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MantenimientoFichaViewController.h; sourceTree = "<group>"; };
+		EE4880AB1919904F002C5777 /* MantenimientoFichaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MantenimientoFichaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +294,9 @@
 		BB1DEABB1884A2400092BE06 = {
 			isa = PBXGroup;
 			children = (
+				EE4880AA1919904F002C5777 /* MantenimientoFichaViewController.h */,
+				EE4880AB1919904F002C5777 /* MantenimientoFichaViewController.m */,
+				EE4880A819183C05002C5777 /* FondoAppRoutesGp.png */,
 				BB1DEACF1884A2410092BE06 /* RoutesGP */,
 				BB1DEAEC1884A2410092BE06 /* RoutesGPTests */,
 				BB1DEAC61884A2400092BE06 /* Frameworks */,
@@ -406,6 +417,7 @@
 		BBC6192B18E0E836005B9999 /* ListadoMotosViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EE4880A4191446A0002C5777 /* CustomCell */,
 				BBC6192818E0E831005B9999 /* ListadoMotosViewController.h */,
 				BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */,
 			);
@@ -465,6 +477,15 @@
 			name = InicioMotoCorre;
 			sourceTree = "<group>";
 		};
+		EE4880A4191446A0002C5777 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE4880A51914476A002C5777 /* ListadoMotosCell.h */,
+				EE4880A61914476A002C5777 /* ListadoMotosCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +533,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = RoutesGP;
 				TargetAttributes = {
+					BB1DEAC31884A2400092BE06 = {
+						DevelopmentTeam = C2FBZ36SXP;
+					};
 					BB1DEAE31884A2410092BE06 = {
 						TestTargetID = BB1DEAC31884A2400092BE06;
 					};
@@ -544,6 +568,7 @@
 				CA91DB7418DC73550084A637 /* menuRoutes.png in Resources */,
 				CAEC452418CF470700DB969C /* FondoMenu.jpg in Resources */,
 				CAEC452218CF407A00DB969C /* SOLO_MOTO.png in Resources */,
+				EE4880A919183C05002C5777 /* FondoAppRoutesGp.png in Resources */,
 				CAEC452718CF7A2000DB969C /* moto.png in Resources */,
 				CAEC452A18CF7A5F00DB969C /* start-button.png in Resources */,
 				BB1DEAFD1884A61F0092BE06 /* iPhone.storyboard in Resources */,
@@ -575,6 +600,7 @@
 			files = (
 				BB17784318B6A481006A2CF1 /* Moto.m in Sources */,
 				BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */,
+				EE4880A71914476A002C5777 /* ListadoMotosCell.m in Sources */,
 				BB17783618B6A3A7006A2CF1 /* NuevaRutaViewController.m in Sources */,
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
@@ -591,6 +617,7 @@
 				BB17784F18B6A481006A2CF1 /* RutaAlerta.m in Sources */,
 				CA91DB7E18DDAEF60084A637 /* MotoCorre2ViewController.m in Sources */,
 				BB17784618B6A481006A2CF1 /* MotoRegistro.m in Sources */,
+				EE4880AC1919904F002C5777 /* MantenimientoFichaViewController.m in Sources */,
 				BB17784018B6A481006A2CF1 /* GrupoUsuarios.m in Sources */,
 				BB1DEAD61884A2410092BE06 /* main.m in Sources */,
 				BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */,
@@ -711,6 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoutesGP/RoutesGP-Prefix.pch";
 				INFOPLIST_FILE = "RoutesGP/RoutesGP-Info.plist";
@@ -724,6 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoutesGP/RoutesGP-Prefix.pch";
 				INFOPLIST_FILE = "RoutesGP/RoutesGP-Info.plist";

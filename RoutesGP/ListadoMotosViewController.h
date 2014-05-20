@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListadoMotosViewController : UIViewController
+@interface ListadoMotosViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+
+- (IBAction)volverMenuPrincipal:(id)sender;
 
 @end

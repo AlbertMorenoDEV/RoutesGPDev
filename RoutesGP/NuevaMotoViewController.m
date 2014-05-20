@@ -49,10 +49,17 @@
     [nuevaMoto setValue:self.modeloTextField.text forKeyPath:@"modelo"];
     [nuevaMoto setValue:self.anoTextField.text forKeyPath:@"ano"];
     //[nuevaMoto setValue:[self.tipoPickerView ] forKeyPath:@"tipo"];
+    
+    
+    [[self presentingViewController]
+     dismissModalViewControllerAnimated:YES];
 }
 
 - (IBAction)cancelarPulsarBoton:(id)sender
 {
+    
+    [[self presentingViewController]
+     dismissModalViewControllerAnimated:YES];
     
 }
 @end
