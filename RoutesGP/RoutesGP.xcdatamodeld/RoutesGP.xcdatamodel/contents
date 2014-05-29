@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Grupo" representedClassName="Grupo" syncable="YES">
-        <attribute name="fecha_creacion" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fechaCreacion" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
@@ -9,19 +9,23 @@
         <relationship name="usuarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GrupoUsuarios" inverseName="grupo" inverseEntity="GrupoUsuarios" syncable="YES"/>
     </entity>
     <entity name="GrupoUsuarios" representedClassName="GrupoUsuarios" syncable="YES">
-        <attribute name="fecha_creacion" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="alias" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaCreacion" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="rol" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="grupo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Grupo" inverseName="usuarios" inverseEntity="Grupo" syncable="YES"/>
+        <relationship name="moto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Moto" inverseName="grupos" inverseEntity="Moto" syncable="YES"/>
     </entity>
     <entity name="Moto" representedClassName="Moto" syncable="YES">
+        <attribute name="alias" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ano" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fabricante" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="fecha_registro" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fechaRegistro" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="modelo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="grupos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GrupoUsuarios" inverseName="moto" inverseEntity="GrupoUsuarios" syncable="YES"/>
         <relationship name="registros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MotoRegistro" inverseName="moto" inverseEntity="MotoRegistro" syncable="YES"/>
     </entity>
     <entity name="MotoRegistro" representedClassName="MotoRegistro" syncable="YES">
@@ -37,7 +41,7 @@
         <attribute name="distancia" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="nivel" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
@@ -50,7 +54,7 @@
     <entity name="RutaAlerta" representedClassName="RutaAlerta" syncable="YES">
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="latitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
@@ -60,7 +64,7 @@
     <entity name="RutaComentario" representedClassName="RutaComentario" syncable="YES">
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="latitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
@@ -69,7 +73,7 @@
     <entity name="RutaImagen" representedClassName="RutaImagen" syncable="YES">
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="imagen" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitud" optional="YES" attributeType="String" syncable="YES"/>
@@ -77,25 +81,43 @@
     </entity>
     <entity name="RutaPunto" representedClassName="RutaPunto" syncable="YES">
         <attribute name="aceleracion" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="calidad_gps" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calidadGps" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="id_usuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUsuario" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="inclinacion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="velocidad" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="ruta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ruta" inverseName="puntos" inverseEntity="Ruta" syncable="YES"/>
     </entity>
+    <entity name="Tienda" syncable="YES">
+        <attribute name="cp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fechaRegistro" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="localizacion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logotipo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logotipoDos" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ofertasParaMoto" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="ofertasParaMotorista" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="ofertasParaRepuesto" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="pais" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poblacion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provincia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Grupo" positionX="-180" positionY="-243" width="128" height="133"/>
-        <element name="GrupoUsuarios" positionX="0" positionY="0" width="128" height="118"/>
-        <element name="Moto" positionX="0" positionY="0" width="128" height="148"/>
+        <element name="Grupo" positionX="-180" positionY="-243" width="128" height="135"/>
+        <element name="GrupoUsuarios" positionX="0" positionY="0" width="128" height="148"/>
+        <element name="Moto" positionX="0" positionY="0" width="128" height="178"/>
         <element name="MotoRegistro" positionX="385" positionY="-54" width="128" height="118"/>
-        <element name="Ruta" positionX="162" positionY="117" width="128" height="253"/>
+        <element name="Ruta" positionX="162" positionY="117" width="128" height="255"/>
         <element name="RutaAlerta" positionX="-9" positionY="357" width="128" height="165"/>
         <element name="RutaComentario" positionX="-261" positionY="297" width="128" height="150"/>
-        <element name="RutaImagen" positionX="-351" positionY="48" width="128" height="150"/>
-        <element name="RutaPunto" positionX="216" positionY="-213" width="128" height="195"/>
+        <element name="RutaImagen" positionX="-351" positionY="48" width="128" height="148"/>
+        <element name="RutaPunto" positionX="216" positionY="-213" width="128" height="193"/>
+        <element name="Tienda" positionX="-144" positionY="-90" width="128" height="268"/>
     </elements>
 </model>
