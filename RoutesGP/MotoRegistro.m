@@ -2,7 +2,7 @@
 //  MotoRegistro.m
 //  RoutesGP
 //
-//  Created by albert moreno vendrell on 20/02/14.
+//  Created by albert moreno vendrell on 04/06/14.
 //  Copyright (c) 2014 RoutesGP. All rights reserved.
 //
 
@@ -16,6 +16,6 @@
 @dynamic id;
 @dynamic texto;
 @dynamic tipo;
-@dynamic id_moto;
+@dynamic moto;
 
 @end

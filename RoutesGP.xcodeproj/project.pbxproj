@@ -7,18 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB17783618B6A3A7006A2CF1 /* NuevaRutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17783518B6A3A7006A2CF1 /* NuevaRutaViewController.m */; };
-		BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17783918B6A480006A2CF1 /* RutaImagen.m */; };
-		BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17783C18B6A481006A2CF1 /* RutaPunto.m */; };
-		BB17784018B6A481006A2CF1 /* GrupoUsuarios.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17783F18B6A481006A2CF1 /* GrupoUsuarios.m */; };
-		BB17784318B6A481006A2CF1 /* Moto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17784218B6A481006A2CF1 /* Moto.m */; };
-		BB17784618B6A481006A2CF1 /* MotoRegistro.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17784518B6A481006A2CF1 /* MotoRegistro.m */; };
-		BB17784C18B6A481006A2CF1 /* Grupo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17784B18B6A481006A2CF1 /* Grupo.m */; };
-		BB17784F18B6A481006A2CF1 /* RutaAlerta.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17784E18B6A481006A2CF1 /* RutaAlerta.m */; };
-		BB17785218B6A481006A2CF1 /* RutaComentario.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17785118B6A481006A2CF1 /* RutaComentario.m */; };
-		BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB17785D18B6BBBF006A2CF1 /* ListadoRutasCell.m */; };
-		BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */; };
-		BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */; };
 		BB1DEAC81884A2400092BE06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEAC71884A2400092BE06 /* Foundation.framework */; };
 		BB1DEACA1884A2410092BE06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEAC91884A2410092BE06 /* CoreGraphics.framework */; };
 		BB1DEACC1884A2410092BE06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1DEACB1884A2410092BE06 /* UIKit.framework */; };
@@ -41,6 +29,11 @@
 		BB7CFA36188F2D8B004AE006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CFA35188F2D8B004AE006 /* MapKit.framework */; };
 		BB957176193E81DE00457138 /* FondoAppRoutesGp.png in Resources */ = {isa = PBXBuildFile; fileRef = BB957173193E81DE00457138 /* FondoAppRoutesGp.png */; };
 		BB957177193E81DE00457138 /* MantenimientoFichaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957175193E81DE00457138 /* MantenimientoFichaViewController.m */; };
+		BB95717C193E837B00457138 /* Moto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB95717B193E837B00457138 /* Moto.m */; };
+		BB95717F193E837B00457138 /* Grupo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB95717E193E837B00457138 /* Grupo.m */; };
+		BB957182193E837C00457138 /* Tienda.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957181193E837C00457138 /* Tienda.m */; };
+		BB957185193E837C00457138 /* MotoRegistro.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957184193E837C00457138 /* MotoRegistro.m */; };
+		BB957188193E837C00457138 /* GrupoUsuarios.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957187193E837C00457138 /* GrupoUsuarios.m */; };
 		BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */; };
 		BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6193018E0E89F005B9999 /* DetalleMotoViewController.m */; };
 		CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA91DB6B18DC73250084A637 /* iCarousel.m */; };
@@ -72,30 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB17783418B6A3A7006A2CF1 /* NuevaRutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevaRutaViewController.h; sourceTree = "<group>"; };
-		BB17783518B6A3A7006A2CF1 /* NuevaRutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevaRutaViewController.m; sourceTree = "<group>"; };
-		BB17783818B6A480006A2CF1 /* RutaImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaImagen.h; sourceTree = "<group>"; };
-		BB17783918B6A480006A2CF1 /* RutaImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaImagen.m; sourceTree = "<group>"; };
-		BB17783B18B6A481006A2CF1 /* RutaPunto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaPunto.h; sourceTree = "<group>"; };
-		BB17783C18B6A481006A2CF1 /* RutaPunto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaPunto.m; sourceTree = "<group>"; };
-		BB17783E18B6A481006A2CF1 /* GrupoUsuarios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrupoUsuarios.h; sourceTree = "<group>"; };
-		BB17783F18B6A481006A2CF1 /* GrupoUsuarios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrupoUsuarios.m; sourceTree = "<group>"; };
-		BB17784118B6A481006A2CF1 /* Moto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moto.h; sourceTree = "<group>"; };
-		BB17784218B6A481006A2CF1 /* Moto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moto.m; sourceTree = "<group>"; };
-		BB17784418B6A481006A2CF1 /* MotoRegistro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotoRegistro.h; sourceTree = "<group>"; };
-		BB17784518B6A481006A2CF1 /* MotoRegistro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoRegistro.m; sourceTree = "<group>"; };
-		BB17784A18B6A481006A2CF1 /* Grupo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grupo.h; sourceTree = "<group>"; };
-		BB17784B18B6A481006A2CF1 /* Grupo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grupo.m; sourceTree = "<group>"; };
-		BB17784D18B6A481006A2CF1 /* RutaAlerta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaAlerta.h; sourceTree = "<group>"; };
-		BB17784E18B6A481006A2CF1 /* RutaAlerta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaAlerta.m; sourceTree = "<group>"; };
-		BB17785018B6A481006A2CF1 /* RutaComentario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RutaComentario.h; sourceTree = "<group>"; };
-		BB17785118B6A481006A2CF1 /* RutaComentario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RutaComentario.m; sourceTree = "<group>"; };
-		BB17785C18B6BBBF006A2CF1 /* ListadoRutasCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoRutasCell.h; sourceTree = "<group>"; };
-		BB17785D18B6BBBF006A2CF1 /* ListadoRutasCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoRutasCell.m; sourceTree = "<group>"; };
-		BB1D8A5E18B2CF7100D85266 /* DetalleRutaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleRutaViewController.h; sourceTree = "<group>"; };
-		BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleRutaViewController.m; sourceTree = "<group>"; };
-		BB1D8A6218B4078D00D85266 /* ListadoRutasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoRutasViewController.h; sourceTree = "<group>"; };
-		BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoRutasViewController.m; sourceTree = "<group>"; };
 		BB1DEAC41884A2400092BE06 /* RoutesGP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutesGP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1DEAC71884A2400092BE06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB1DEAC91884A2410092BE06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +93,16 @@
 		BB957173193E81DE00457138 /* FondoAppRoutesGp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoAppRoutesGp.png; sourceTree = "<group>"; };
 		BB957174193E81DE00457138 /* MantenimientoFichaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MantenimientoFichaViewController.h; sourceTree = "<group>"; };
 		BB957175193E81DE00457138 /* MantenimientoFichaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MantenimientoFichaViewController.m; sourceTree = "<group>"; };
+		BB95717A193E837B00457138 /* Moto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moto.h; sourceTree = "<group>"; };
+		BB95717B193E837B00457138 /* Moto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moto.m; sourceTree = "<group>"; };
+		BB95717D193E837B00457138 /* Grupo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grupo.h; sourceTree = "<group>"; };
+		BB95717E193E837B00457138 /* Grupo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grupo.m; sourceTree = "<group>"; };
+		BB957180193E837C00457138 /* Tienda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tienda.h; sourceTree = "<group>"; };
+		BB957181193E837C00457138 /* Tienda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tienda.m; sourceTree = "<group>"; };
+		BB957183193E837C00457138 /* MotoRegistro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotoRegistro.h; sourceTree = "<group>"; };
+		BB957184193E837C00457138 /* MotoRegistro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoRegistro.m; sourceTree = "<group>"; };
+		BB957186193E837C00457138 /* GrupoUsuarios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrupoUsuarios.h; sourceTree = "<group>"; };
+		BB957187193E837C00457138 /* GrupoUsuarios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrupoUsuarios.m; sourceTree = "<group>"; };
 		BBC6192818E0E831005B9999 /* ListadoMotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoMotosViewController.h; sourceTree = "<group>"; };
 		BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoMotosViewController.m; sourceTree = "<group>"; };
 		BBC6192F18E0E89F005B9999 /* DetalleMotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleMotoViewController.h; sourceTree = "<group>"; };
@@ -175,120 +154,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BB17783718B6A3AC006A2CF1 /* NuevaRutaViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB17783418B6A3A7006A2CF1 /* NuevaRutaViewController.h */,
-				BB17783518B6A3A7006A2CF1 /* NuevaRutaViewController.m */,
-			);
-			name = NuevaRutaViewController;
-			sourceTree = "<group>";
-		};
-		BB17785318B6A48C006A2CF1 /* RutaComentario */ = {
-			isa = PBXGroup;
-			children = (
-				BB17785018B6A481006A2CF1 /* RutaComentario.h */,
-				BB17785118B6A481006A2CF1 /* RutaComentario.m */,
-			);
-			name = RutaComentario;
-			sourceTree = "<group>";
-		};
-		BB17785418B6A496006A2CF1 /* RutaAlerta */ = {
-			isa = PBXGroup;
-			children = (
-				BB17784D18B6A481006A2CF1 /* RutaAlerta.h */,
-				BB17784E18B6A481006A2CF1 /* RutaAlerta.m */,
-			);
-			name = RutaAlerta;
-			sourceTree = "<group>";
-		};
-		BB17785518B6A49D006A2CF1 /* Grupo */ = {
-			isa = PBXGroup;
-			children = (
-				BB17784A18B6A481006A2CF1 /* Grupo.h */,
-				BB17784B18B6A481006A2CF1 /* Grupo.m */,
-			);
-			name = Grupo;
-			sourceTree = "<group>";
-		};
-		BB17785718B6A4AB006A2CF1 /* MotoRegistro */ = {
-			isa = PBXGroup;
-			children = (
-				BB17784418B6A481006A2CF1 /* MotoRegistro.h */,
-				BB17784518B6A481006A2CF1 /* MotoRegistro.m */,
-			);
-			name = MotoRegistro;
-			sourceTree = "<group>";
-		};
-		BB17785818B6A4B2006A2CF1 /* Moto */ = {
-			isa = PBXGroup;
-			children = (
-				BB17784118B6A481006A2CF1 /* Moto.h */,
-				BB17784218B6A481006A2CF1 /* Moto.m */,
-			);
-			name = Moto;
-			sourceTree = "<group>";
-		};
-		BB17785918B6A4B7006A2CF1 /* GrupoUsuarios */ = {
-			isa = PBXGroup;
-			children = (
-				BB17783E18B6A481006A2CF1 /* GrupoUsuarios.h */,
-				BB17783F18B6A481006A2CF1 /* GrupoUsuarios.m */,
-			);
-			name = GrupoUsuarios;
-			sourceTree = "<group>";
-		};
-		BB17785A18B6A4C0006A2CF1 /* RutaPunto */ = {
-			isa = PBXGroup;
-			children = (
-				BB17783B18B6A481006A2CF1 /* RutaPunto.h */,
-				BB17783C18B6A481006A2CF1 /* RutaPunto.m */,
-			);
-			name = RutaPunto;
-			sourceTree = "<group>";
-		};
-		BB17785B18B6A4C8006A2CF1 /* RutaImagen */ = {
-			isa = PBXGroup;
-			children = (
-				BB17783818B6A480006A2CF1 /* RutaImagen.h */,
-				BB17783918B6A480006A2CF1 /* RutaImagen.m */,
-			);
-			name = RutaImagen;
-			sourceTree = "<group>";
-		};
-		BB17785F18B6BBC5006A2CF1 /* ListadoRutasCell */ = {
-			isa = PBXGroup;
-			children = (
-				BB17785C18B6BBBF006A2CF1 /* ListadoRutasCell.h */,
-				BB17785D18B6BBBF006A2CF1 /* ListadoRutasCell.m */,
-			);
-			name = ListadoRutasCell;
-			sourceTree = "<group>";
-		};
 		BB17786018B6BBCF006A2CF1 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
-				BB17785F18B6BBC5006A2CF1 /* ListadoRutasCell */,
 			);
 			name = Componentes;
-			sourceTree = "<group>";
-		};
-		BB1D8A6118B2CF7500D85266 /* DetalleRutaViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB1D8A5E18B2CF7100D85266 /* DetalleRutaViewController.h */,
-				BB1D8A5F18B2CF7100D85266 /* DetalleRutaViewController.m */,
-			);
-			name = DetalleRutaViewController;
-			sourceTree = "<group>";
-		};
-		BB1D8A6518B4079200D85266 /* ListadoRutasViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BB1D8A6218B4078D00D85266 /* ListadoRutasViewController.h */,
-				BB1D8A6318B4078D00D85266 /* ListadoRutasViewController.m */,
-			);
-			name = ListadoRutasViewController;
 			sourceTree = "<group>";
 		};
 		BB1DEABB1884A2400092BE06 = {
@@ -327,25 +197,21 @@
 		BB1DEACF1884A2410092BE06 /* RoutesGP */ = {
 			isa = PBXGroup;
 			children = (
-				BB957178193E81E600457138 /* MantenimientoFichaViewController */,
 				CAA96FB418CA6D680001E970 /* Imágenes */,
 				CAA96FB818CA6D820001E970 /* InicioMotoCorre */,
 				CA91DB6D18DC732A0084A637 /* iCarousel */,
-				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
-				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
+				BB957179193E825200457138 /* AppDelegate */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
 				BB1DEADB1884A2410092BE06 /* RoutesGP.xcdatamodeld */,
 				BB1DEAFC1884A61F0092BE06 /* iPhone.storyboard */,
 				BB1DEAD01884A2410092BE06 /* Supporting Files */,
 				BB74BE4E18C7DCD200CBF7FB /* ManagedObjects */,
 				BB17786018B6BBCF006A2CF1 /* Componentes */,
-				BB17783718B6A3AC006A2CF1 /* NuevaRutaViewController */,
-				BB1D8A6118B2CF7500D85266 /* DetalleRutaViewController */,
-				BB1D8A6518B4079200D85266 /* ListadoRutasViewController */,
 				BB71F57C18AD9616009DB642 /* NuevaMotoViewController */,
 				BBC6193218E0E8A3005B9999 /* DetalleMotoViewController */,
 				BBC6192B18E0E836005B9999 /* ListadoMotosViewController */,
 				BB7CFA32188F2D41004AE006 /* EjemploGpsViewController */,
+				BB957178193E81E600457138 /* MantenimientoFichaViewController */,
 			);
 			path = RoutesGP;
 			sourceTree = "<group>";
@@ -391,14 +257,16 @@
 		BB74BE4E18C7DCD200CBF7FB /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				BB17785A18B6A4C0006A2CF1 /* RutaPunto */,
-				BB17785318B6A48C006A2CF1 /* RutaComentario */,
-				BB17785B18B6A4C8006A2CF1 /* RutaImagen */,
-				BB17785418B6A496006A2CF1 /* RutaAlerta */,
-				BB17785518B6A49D006A2CF1 /* Grupo */,
-				BB17785718B6A4AB006A2CF1 /* MotoRegistro */,
-				BB17785818B6A4B2006A2CF1 /* Moto */,
-				BB17785918B6A4B7006A2CF1 /* GrupoUsuarios */,
+				BB957186193E837C00457138 /* GrupoUsuarios.h */,
+				BB957187193E837C00457138 /* GrupoUsuarios.m */,
+				BB957183193E837C00457138 /* MotoRegistro.h */,
+				BB957184193E837C00457138 /* MotoRegistro.m */,
+				BB957180193E837C00457138 /* Tienda.h */,
+				BB957181193E837C00457138 /* Tienda.m */,
+				BB95717D193E837B00457138 /* Grupo.h */,
+				BB95717E193E837B00457138 /* Grupo.m */,
+				BB95717A193E837B00457138 /* Moto.h */,
+				BB95717B193E837B00457138 /* Moto.m */,
 			);
 			name = ManagedObjects;
 			sourceTree = "<group>";
@@ -419,6 +287,15 @@
 				BB957175193E81DE00457138 /* MantenimientoFichaViewController.m */,
 			);
 			name = MantenimientoFichaViewController;
+			sourceTree = "<group>";
+		};
+		BB957179193E825200457138 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BB1DEAD81884A2410092BE06 /* AppDelegate.h */,
+				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 		BBC6192B18E0E836005B9999 /* ListadoMotosViewController */ = {
@@ -606,30 +483,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB17784318B6A481006A2CF1 /* Moto.m in Sources */,
+				BB95717C193E837B00457138 /* Moto.m in Sources */,
 				BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */,
+				BB957182193E837C00457138 /* Tienda.m in Sources */,
 				EE4880A71914476A002C5777 /* ListadoMotosCell.m in Sources */,
-				BB17783618B6A3A7006A2CF1 /* NuevaRutaViewController.m in Sources */,
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
 				CA91DB7918DC73ED0084A637 /* CarouselViewController.m in Sources */,
-				BB1D8A6018B2CF7100D85266 /* DetalleRutaViewController.m in Sources */,
+				BB957185193E837C00457138 /* MotoRegistro.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
-				BB17783A18B6A480006A2CF1 /* RutaImagen.m in Sources */,
-				BB17785E18B6BBBF006A2CF1 /* ListadoRutasCell.m in Sources */,
-				BB1D8A6418B4078D00D85266 /* ListadoRutasViewController.m in Sources */,
 				CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */,
-				BB17783D18B6A481006A2CF1 /* RutaPunto.m in Sources */,
+				BB957188193E837C00457138 /* GrupoUsuarios.m in Sources */,
 				BB7CFA31188F2D3C004AE006 /* EjemploGpsViewController.m in Sources */,
-				BB17785218B6A481006A2CF1 /* RutaComentario.m in Sources */,
-				BB17784F18B6A481006A2CF1 /* RutaAlerta.m in Sources */,
 				CA91DB7E18DDAEF60084A637 /* MotoCorre2ViewController.m in Sources */,
-				BB17784618B6A481006A2CF1 /* MotoRegistro.m in Sources */,
 				BB957177193E81DE00457138 /* MantenimientoFichaViewController.m in Sources */,
-				BB17784018B6A481006A2CF1 /* GrupoUsuarios.m in Sources */,
 				BB1DEAD61884A2410092BE06 /* main.m in Sources */,
 				BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */,
-				BB17784C18B6A481006A2CF1 /* Grupo.m in Sources */,
+				BB95717F193E837B00457138 /* Grupo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

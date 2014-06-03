@@ -8,7 +8,6 @@
 
 #import "CarouselViewController.h"
 #import "ListadoMotosViewController.h"
-#import "ListadoRutasViewController.h"
 
 @interface CarouselViewController ()
 
@@ -244,17 +243,10 @@
              NSLog(@"Tapped view number: %@", item);
             
             
-            ListadoRutasViewController *vclistadoRutas =[self.storyboard instantiateViewControllerWithIdentifier:@"ListadoRutasViewController"];
-            
-            UINavigationController * NClistadoRutas = [[UINavigationController alloc]initWithRootViewController:vclistadoRutas];
-            
-            
-            
             //[[ListadoMotosViewController alloc]initWithNibName:@"ListadoMotosViewController" bundle:nil];
             
             //ListadoMotosViewController * vclistadoMotos = [[ListadoMotosViewController alloc]init];
             //vclistadoMotos.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-            [self presentModalViewController:NClistadoRutas animated:YES];
             
             break;
         }
