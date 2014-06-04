@@ -253,7 +253,7 @@
         case 2:{
              NSLog(@"Tapped view number: %@", item);
             
-              ListadoMotosViewController *vclistadoMotos =[self.storyboard instantiateViewControllerWithIdentifier:@"ListadoMotosViewController"];
+              //ListadoMotosViewController *vclistadoMotos =[self.storyboard instantiateViewControllerWithIdentifier:@"ListadoMotosViewController"];
         //UINavigationController * NClistadoMotos = [[UINavigationController alloc]initWithRootViewController:vclistadoMotos];
         UINavigationController *NClistadoMotos = [self.storyboard instantiateViewControllerWithIdentifier:@"ListadoMotosNavigation"];
         NClistadoMotos.navigationBar.backgroundColor = [UIColor clearColor];
@@ -270,7 +270,8 @@
             //vclistadoMotos.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
             //[self presentModalViewController:NClistadoMotos animated:YES];
             
-            [self presentModalViewController:NClistadoMotos animated:YES];
+            //[self presentModalViewController:NClistadoMotos animated:YES];
+            [[self presentingViewController] presentViewController:NClistadoMotos animated:YES completion:nil];
             break;
         }
             

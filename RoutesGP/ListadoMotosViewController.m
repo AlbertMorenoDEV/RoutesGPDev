@@ -52,8 +52,7 @@
 */
 
 - (IBAction)volverMenuPrincipal:(id)sender {
-    [[self presentingViewController]
-     dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
