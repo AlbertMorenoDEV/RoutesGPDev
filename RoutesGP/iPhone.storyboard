@@ -420,6 +420,46 @@
             </objects>
             <point key="canvasLocation" x="2185" y="763"/>
         </scene>
+        <!--Login View Controller - Login-->
+        <scene sceneID="4v5-iX-KEx">
+            <objects>
+                <viewController id="2KL-rl-psI" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="USG-B3-3lV"/>
+                        <viewControllerLayoutGuide type="bottom" id="2LT-q1-RIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JeV-U3-2Wh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FondoAppRoutesGp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-Eu-wYa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihI-iK-PKm">
+                                <rect key="frame" x="20" y="80" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Scp-Vb-5eU">
+                                <rect key="frame" x="20" y="118" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="Cu5-JT-vgh">
+                        <barButtonItem key="backBarButtonItem" title="Menú" id="VbU-P0-sVr"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="oSK-Jw-ysD"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGL-uD-E5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2185" y="-579"/>
+        </scene>
         <!--Nueva Moto View Controller-->
         <scene sceneID="gDu-Ce-kXY">
             <objects>
@@ -609,6 +649,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da8-AC-ODe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="1606"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nQb-fW-avM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cmP-Zt-U8a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="orH-ks-63e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2KL-rl-psI" kind="relationship" relationship="rootViewController" id="CSc-rf-3Vm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D40-Cv-IpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="-579"/>
         </scene>
     </scenes>
     <resources>

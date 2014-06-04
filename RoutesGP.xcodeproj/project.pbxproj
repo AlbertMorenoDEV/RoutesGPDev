@@ -33,6 +33,9 @@
 		BB957182193E837C00457138 /* Tienda.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957181193E837C00457138 /* Tienda.m */; };
 		BB957185193E837C00457138 /* MotoRegistro.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957184193E837C00457138 /* MotoRegistro.m */; };
 		BB957188193E837C00457138 /* GrupoUsuarios.m in Sources */ = {isa = PBXBuildFile; fileRef = BB957187193E837C00457138 /* GrupoUsuarios.m */; };
+		BB9A1129193FC6EA000BB64B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9A1128193FC6EA000BB64B /* LoginViewController.m */; };
+		BB9A1130193FC762000BB64B /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9A112F193FC762000BB64B /* MD5.m */; };
+		BB9A1135193FC8F7000BB64B /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9A1134193FC8F7000BB64B /* Login.m */; };
 		BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */; };
 		BBC6193118E0E89F005B9999 /* DetalleMotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC6193018E0E89F005B9999 /* DetalleMotoViewController.m */; };
 		CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA91DB6B18DC73250084A637 /* iCarousel.m */; };
@@ -100,6 +103,12 @@
 		BB957184193E837C00457138 /* MotoRegistro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotoRegistro.m; sourceTree = "<group>"; };
 		BB957186193E837C00457138 /* GrupoUsuarios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrupoUsuarios.h; sourceTree = "<group>"; };
 		BB957187193E837C00457138 /* GrupoUsuarios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrupoUsuarios.m; sourceTree = "<group>"; };
+		BB9A1127193FC6EA000BB64B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BB9A1128193FC6EA000BB64B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BB9A112E193FC762000BB64B /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		BB9A112F193FC762000BB64B /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		BB9A1133193FC8F7000BB64B /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		BB9A1134193FC8F7000BB64B /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		BBC6192818E0E831005B9999 /* ListadoMotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListadoMotosViewController.h; sourceTree = "<group>"; };
 		BBC6192918E0E831005B9999 /* ListadoMotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListadoMotosViewController.m; sourceTree = "<group>"; };
 		BBC6192F18E0E89F005B9999 /* DetalleMotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleMotoViewController.h; sourceTree = "<group>"; };
@@ -194,6 +203,7 @@
 		BB1DEACF1884A2410092BE06 /* RoutesGP */ = {
 			isa = PBXGroup;
 			children = (
+				BB9A1132193FC774000BB64B /* Librerias */,
 				BB957179193E825200457138 /* AppDelegate */,
 				CA91DB6D18DC732A0084A637 /* iCarousel */,
 				BB1DEADE1884A2410092BE06 /* Images.xcassets */,
@@ -206,7 +216,9 @@
 				BBC6193218E0E8A3005B9999 /* DetalleMotoViewController */,
 				BBC6192B18E0E836005B9999 /* ListadoMotosViewController */,
 				BB957178193E81E600457138 /* MantenimientoFichaViewController */,
+				BB9A112A193FC6F0000BB64B /* LoginViewController */,
 				CAA96FB818CA6D820001E970 /* InicioMotoCorre */,
+				BB9A1136193FC8FB000BB64B /* Login */,
 				CAA96FB418CA6D680001E970 /* Imágenes */,
 			);
 			path = RoutesGP;
@@ -283,6 +295,41 @@
 				BB1DEAD91884A2410092BE06 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BB9A112A193FC6F0000BB64B /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB9A1127193FC6EA000BB64B /* LoginViewController.h */,
+				BB9A1128193FC6EA000BB64B /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		BB9A1131193FC76D000BB64B /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				BB9A112E193FC762000BB64B /* MD5.h */,
+				BB9A112F193FC762000BB64B /* MD5.m */,
+			);
+			name = MD5;
+			sourceTree = "<group>";
+		};
+		BB9A1132193FC774000BB64B /* Librerias */ = {
+			isa = PBXGroup;
+			children = (
+				BB9A1131193FC76D000BB64B /* MD5 */,
+			);
+			name = Librerias;
+			sourceTree = "<group>";
+		};
+		BB9A1136193FC8FB000BB64B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BB9A1133193FC8F7000BB64B /* Login.h */,
+				BB9A1134193FC8F7000BB64B /* Login.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		BBC6192B18E0E836005B9999 /* ListadoMotosViewController */ = {
@@ -477,15 +524,18 @@
 				BB1DEADA1884A2410092BE06 /* AppDelegate.m in Sources */,
 				BB1DEADD1884A2410092BE06 /* RoutesGP.xcdatamodeld in Sources */,
 				CA91DB7918DC73ED0084A637 /* CarouselViewController.m in Sources */,
+				BB9A1129193FC6EA000BB64B /* LoginViewController.m in Sources */,
 				BB957185193E837C00457138 /* MotoRegistro.m in Sources */,
 				BB71F57B18AD960F009DB642 /* NuevaMotoViewController.m in Sources */,
 				CA91DB6C18DC73250084A637 /* iCarousel.m in Sources */,
 				BB957188193E837C00457138 /* GrupoUsuarios.m in Sources */,
+				BB9A1130193FC762000BB64B /* MD5.m in Sources */,
 				CA91DB7E18DDAEF60084A637 /* MotoCorre2ViewController.m in Sources */,
 				BB957177193E81DE00457138 /* MantenimientoFichaViewController.m in Sources */,
 				BB1DEAD61884A2410092BE06 /* main.m in Sources */,
 				BBC6192A18E0E831005B9999 /* ListadoMotosViewController.m in Sources */,
 				BB95717F193E837B00457138 /* Grupo.m in Sources */,
+				BB9A1135193FC8F7000BB64B /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
